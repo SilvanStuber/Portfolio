@@ -1,0 +1,46 @@
+header {
+  height: 110px;
+  width: 100vw;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  > img {
+    width: 150px;
+    padding-left: 100px;
+    cursor: pointer;
+  }
+}
+
+.menu-container-header {
+  display: flex;
+  padding-right: 100px;
+  gap: 29px;
+  > a {
+    color: var(--white);
+    text-decoration: none;
+    size: 29px;
+    width: 400;
+    &:hover {
+      color: var(--lightblue);
+    }
+  }
+}
+
+.border-bottom-line {
+  color: var(--lightblue) !important;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 40px; /* Anpassen, um die Länge der Linie zu kontrollieren */
+    height: 3px;
+    background-color: var(--darkblue) ;
+  }
+}
