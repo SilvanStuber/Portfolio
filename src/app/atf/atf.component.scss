@@ -53,6 +53,28 @@
   margin-top: -40px;
 }
 
+.atf-button {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 240px;
+  padding-right: 100px;
+  font-size: 24px;
+  background-color: var(--lightBlue);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  z-index: 4;
+  &:hover {
+    background-color: var(--darkBlue);
+    scale: 1.1;
+  }
+}
+
 .vector-image {
   position: absolute;
   top: 500px;
