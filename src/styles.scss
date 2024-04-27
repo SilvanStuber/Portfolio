@@ -1,20 +1,26 @@
 :root {
-    --lightblue: #00BEE8;
-    --darkblue: #4B47FF;
-    --white: #FFFFFF;
-    --backgroundcolor: #141D2F;
+    --lightBlue:rgba(0, 190, 232, 1);
+    --darkBlue: rgba(75, 71, 255, 1);
+    --white: rgba(255, 255, 254, 1);
+    --backgroundColor: rgba(20, 29, 47, 1);
+    --backgroundColorFaded: rgba(20, 29, 47, 0.8);
   }
 
 *{
     margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--backgroundcolor);
+    background-color: var(--backgroundColor);
     font-family: 'Poppins';   
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /**************************************************** fonts ***********************************************************/
@@ -91,3 +97,27 @@ body {
     font-weight: 900;
     src: url('/assets/fonts/poppins-v21-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #4b47ff #141d2f;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #141d2f;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4b47ff;
+    border-radius: 10px;
+    border: 3px dotted #ffffff;
+  }
+
+  

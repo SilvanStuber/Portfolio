@@ -13,6 +13,14 @@ export class HeaderComponent {
   skillsClicked = false;
   portfolioClicked = false;
 
+  /**
+   * Updates the style of the bottom line based on the section clicked.
+   * Resets all menu related variables and sets the clicked section variable 
+   * to true.
+   *
+   * @param {string} clickedSection - The name of the section that was clicked. 
+   * Possible values are 'About me', 'Skills', 'Portfolio'.
+   */
   changeStyleBottomLine(clickedSection: string) {
     this.resetMenuVariables();
     if (clickedSection == 'About me') {
@@ -24,6 +32,10 @@ export class HeaderComponent {
     }
   }
 
+  /**
+   * Resets the menu variables to false for all sections 
+   * ('About me', 'Skills', 'Portfolio').
+   */
   resetMenuVariables() {
     this.aboutMeClicked = false;
     this.skillsClicked = false;

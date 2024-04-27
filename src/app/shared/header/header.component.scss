@@ -1,12 +1,14 @@
 header {
   height: 110px;
-  width: 100vw;
+  width: calc(100vw - 18px);
   max-width: 1920px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  background-color: var(--backgroundColor);
   top: 0;
+  z-index: 999;
   > img {
     width: 150px;
     padding-left: 100px;
@@ -24,13 +26,13 @@ header {
     size: 29px;
     width: 400;
     &:hover {
-      color: var(--lightblue);
+      color: var(--lightBlue);
     }
   }
 }
 
 .border-bottom-line {
-  color: var(--lightblue) !important;
+  color: var(--lightBlue) !important;
   position: relative;
   display: inline-block;
 
@@ -41,6 +43,6 @@ header {
     left: 0;
     width: 40px; /* Anpassen, um die Länge der Linie zu kontrollieren */
     height: 3px;
-    background-color: var(--darkblue) ;
+    background-color: var(--darkBlue) ;
   }
 }
