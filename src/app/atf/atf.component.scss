@@ -1,9 +1,8 @@
 .atf-container {
-  height: calc(100vh - 110px);
-  width: calc(100vw - 18px);
-  max-width: 1920px;
   display: flex;
   justify-content: space-between;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .backgound-image {
@@ -21,11 +20,11 @@
 
 .atf-i-am-countainer {
   margin-top: 200px;
-  padding-right: 100px;
+  margin-right: 100px;
 }
 
 .atf-description-container {
- z-index: 2;
+  z-index: 2;
 }
 
 .atf-i-am-text {
@@ -75,10 +74,56 @@
   }
 }
 
-.vector-image {
+.atf-bottom-container {
   position: absolute;
   top: 500px;
   left: 0;
   width: 100vw !important;
   z-index: 3;
+}
+
+.atf-bottom-image {
+  width: 100%;
+}
+
+.atf-icon-container {
+  position: absolute;
+  top: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.atf-icon-distance-line {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  min-width: 100px;
+  width: calc((100vw - 1920px) / 2);
+  background-color: var(--darkBlue);
+}
+
+.atf-icon-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1920px;
+  width: 100%;
+  margin-left: 130px;
+}
+
+.atf-icon {
+  margin-top: 4px;
+  height: 30px;
+  cursor: pointer;
+  &:hover {
+    scale: 1.25;
+  }
+}
+
+.atf-link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 23px;
 }

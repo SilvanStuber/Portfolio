@@ -1,8 +1,10 @@
 <header>
+  <div class="header-container">
   <img src="/assets/img/logo.png" alt="logo">
   <div class="menu-container-header">
     <a (click)="changeStyleBottomLine('About me')" [class.border-bottom-line]="aboutMeClicked" href="#">About me</a>
     <a (click)="changeStyleBottomLine('Skills')" [class.border-bottom-line]="skillsClicked" href="#">Skills</a>
     <a (click)="changeStyleBottomLine('Portfolio')" [class.border-bottom-line]="portfolioClicked" href="#">Portfolio</a>
+  </div>
   </div>
 </header>

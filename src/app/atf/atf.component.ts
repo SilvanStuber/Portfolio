@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AppdataService } from '../appdata.service';
+
 
 @Component({
   selector: 'app-atf',
@@ -9,6 +11,5 @@ import { Component } from '@angular/core';
   styleUrl: './atf.component.scss'
 })
 export class AtfComponent {
-  fontColorBlue = 'rgba(75, 71, 255, 1)';
-  fontColorWhite = 'rgba(255, 255, 254, 1)';
+ appdata = inject(AppdataService);
 }

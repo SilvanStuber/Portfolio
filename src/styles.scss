@@ -21,6 +21,14 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    width: 100vw;
+}
+
+app-atf {
+  height: calc(100vh - 110px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 /**************************************************** fonts ***********************************************************/
