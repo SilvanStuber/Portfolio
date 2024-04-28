@@ -42,7 +42,6 @@ header {
   color: var(--lightBlue) !important;
   position: relative;
   display: inline-block;
-
   &::after {
     content: "";
     position: absolute;
@@ -50,6 +49,32 @@ header {
     left: 0;
     width: 40px; /* Anpassen, um die Länge der Linie zu kontrollieren */
     height: 3px;
-    background-color: var(--darkBlue) ;
+    background-color: var(--darkBlue);
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-container {
+    > img {
+      padding-left: 50px;
+    }
+  }
+
+  .menu-container-header {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-container-header {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    > img {
+      padding-left: 25px;
+    }
   }
 }
