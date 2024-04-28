@@ -318,7 +318,7 @@
   }
 
   .atf-bottom-container {
-    top: 290px;
+    top: 320px;
   }
 
   .atf-button {
@@ -327,12 +327,59 @@
 
   .atf-i-am-countainer {
     margin-top: -120px;
-    padding-left: 12px;
+  }
+
+  .atf-icon-container {
+    top: 300px;
   }
 }
 
-@media (max-width: 400px) {
-  .atf-bottom-container {
-    top: 320px;
+@media (max-width: 500px) {
+  .atf-i-am-text {
+    top: 420px;  
+  }
+  .atf-i-am-countainer {
+    margin-top: -160px;
+  }
+  
+  .atf-icon-container {
+    top: 275px;
   }
 }
+
+@media (max-width: 450px) {
+  .atf-i-am-text {
+    top: 410px;  
+  }
+  .atf-i-am-countainer {
+    margin-top: -180px;
+  }
+
+  .atf-icon-container {
+    top: 250px;
+  }
+}
+
+@media (min-height: 1000px) and (max-width: 1000px) {
+  .atf-i-am-countainer{
+    margin-top: -60px !important;
+  }
+}
+
+@media (min-height: 1000px) and (max-width: 800px) {
+  .atf-i-am-countainer{
+    margin-top: -155px !important;
+  }
+}
+
+@media (min-height: 1000px) and (max-width: 600px) {
+  .atf-i-am-countainer{
+    margin-top: -480px !important;
+  }
+}
+
+
+
+
+
+
