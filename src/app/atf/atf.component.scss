@@ -29,10 +29,6 @@
   height: 172px;
 }
 
-.atf-description-container {
-  z-index: 4;
-}
-
 .atf-button {
   position: absolute;
   margin-top: 24px;
@@ -57,7 +53,7 @@
 
 .atf-bottom-container {
   position: absolute;
-  top: 500px;
+  top: 600px;
   left: 0;
   width: 100vw !important;
   z-index: 3;
@@ -69,7 +65,7 @@
 
 .atf-icon-container {
   position: absolute;
-  top: 360px;
+  top: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,55 +129,69 @@
   white-space: nowrap;
 }
 
-@media (min-width: 2000px) {
-  .atf-bottom-container {
-    top: 850px;
-  }
-
-  .background-image {
-    height: 1000px;
-  }
-
-  .atf-profile-image {
-    height: 1000px;
-  }
-
-  .atf-i-am-countainer {
-    margin-top: 350px;
-  }
-}
-
-@media (max-width: 1900px) {
-  .atf-profile-image {
-    height: 600px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .atf-bottom-container {
-    top: 460px;
-  }
-
-  .background-image {
-    height: 500px;
-  }
-
-  .atf-profile-image {
-    height: 500px;
-    padding-left: 100px;
-  }
-
-  .atf-button {
-    position: absolute;
-    margin-left: 80px;
-  }
-
+@media (min-height: 1200px) {
   .atf-icon-container {
-    top: 400px;
+    top: 450px;
+  }
+  .atf-bottom-container {
+    top: 750px;
+  }
+
+  .background-image {
+    height: 900px;
+  }
+  
+  .atf-profile-image {
+    height: 900px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-height: 1200px) and (max-width: 1200px) {
+  .atf-i-am-countainer {
+    margin-top: 5% !important;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 600px) {
+  .atf-i-am-countainer {
+    margin-top: -45% !important;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 550px) {
+  .atf-i-am-countainer {
+    margin-top: -55% !important;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 470px) {
+  .atf-i-am-countainer {
+    margin-top: -75% !important;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 400px) {
+  .atf-i-am-countainer {
+    margin-top: -85% !important;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 330px) {
+  .atf-i-am-countainer {
+    margin-top: -95% !important;
+  }
+}
+
+@media (max-width: 1600px) {
+  .atf-description-image {
+    height: 89px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .atf-description-image {
+    height: 89px;
+  }
   .atf-container {
     display: flex;
     justify-content: center;
@@ -213,12 +223,12 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    margin-top: 300px;
+    margin-top: 35%;
     margin-right: 0;
   }
 
   .atf-bottom-container {
-    top: 420px;
+    top: 400px;
   }
 
   .scroll-down-container {
@@ -235,10 +245,6 @@
 }
 
 @media (max-width: 800px) {
-  .atf-i-am-countainer {
-    margin-top: 200px;
-  }
-
   .atf-icon-container {
     top: 400px;
   }
@@ -267,7 +273,7 @@
   }
 
   .atf-i-am-countainer {
-    margin-top: -120px;
+    margin-top: 15%;
   }
 
   .atf-icon-container {
@@ -276,8 +282,8 @@
 }
 
 @media (max-width: 500px) {
-  .atf-i-am-countainer {
-    margin-top: -160px;
+  .atf-description-image {
+    height: 60px;
   }
 
   .atf-icon-container {
@@ -286,55 +292,43 @@
 }
 
 @media (max-width: 450px) {
-  .atf-i-am-countainer {
-    margin-top: -180px;
-  }
-
   .atf-icon-container {
     top: 250px;
   }
 }
 
-@media (min-height: 1200px) and (max-width: 1000px) {
+@media (max-height: 900px) and (max-width: 500px) {
   .atf-i-am-countainer {
-    margin-top: -60px !important;
+    margin-top: 6%;
   }
 }
 
-@media (min-height: 1200px) and (max-width: 800px) {
+@media (max-height: 750px) and (max-width: 360px) {
   .atf-i-am-countainer {
-    margin-top: -160px !important;
+    margin-top: 50% !important;
   }
 }
 
-@media (min-height: 1200px) and (max-width: 600px) {
+@media (max-height: 700px) and (max-width: 500px) {
   .atf-i-am-countainer {
-    margin-top: -480px !important;
+    margin-top: 50% !important;
   }
 }
 
-@media (min-height: 1200px) and (max-width: 500px) {
+@media (height: 1368px) and (width: 912px) {
   .atf-i-am-countainer {
-    margin-top: -520px !important;
+    margin-top: 10% !important;
   }
 }
 
-
-@media (max-height: 900px) {
+@media (height: 1280px) and (width: 853px) {
   .atf-i-am-countainer {
-    margin-top: -160px !important;
+    margin-top: 10% !important;
   }
 }
 
-@media (max-height: 850px) {
+@media (height: 720px) and (width: 540px) {
   .atf-i-am-countainer {
-    margin-top: -110px !important;
+    margin-top: 40% !important;
   }
 }
-
-@media (max-height: 700px) {
-  .atf-i-am-countainer {
-    margin-top: 70px !important;
-  }
-}
-
