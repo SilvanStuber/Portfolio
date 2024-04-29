@@ -31,6 +31,15 @@ app-atf {
   justify-content: center;
 }
 
+app-about-me {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  color: var(--white);
+  width: 100vw;
+}
+
 /**************************************************** fonts ***********************************************************/
 
 /* poppins-100 - latin */
