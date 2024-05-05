@@ -140,10 +140,12 @@
 
   .background-image {
     height: 900px;
+    top: 180px;
   }
 
   .atf-profile-image {
     height: 900px;
+    top: 180px;
   }
 
   .atf-i-am-countainer {
@@ -151,7 +153,17 @@
   }
 
   .atf-icon-container {
-    top: 500px;
+    top: 450px;
+  }
+
+  .atf-bottom-container {
+    top: 750px;
+  }
+}
+
+@media (min-height: 1000px) and (max-width: 1000px) {
+  .atf-icon-container {
+    top: 550px !important;
   }
 }
 
@@ -167,11 +179,29 @@
   .atf-bottom-container {
     top: 590px;
   }
+
+  .atf-icon-container {
+    top: 620px;
+  }
 }
 
 @media (min-height: 1200px) and (max-width: 1400px) {
   .atf-bottom-container {
     top: 640px;
+  }
+
+  .atf-icon-container {
+    top: 570px !important;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 800px) {
+  .atf-bottom-container {
+    top: 850px !important;
+  }
+
+  .atf-i-am-countainer {
+    margin-top: 55% !important;
   }
 }
 
@@ -185,9 +215,27 @@
   }
 }
 
-@media (min-height: 1200px) and (max-width: 600px) {
+@media (min-height: 1200px) and (max-width: 500px) {
   .atf-i-am-countainer {
     margin-top: 65% !important;
+  }
+
+  .atf-bottom-container {
+    top: 500px !important;
+  }
+
+  .atf-icon-container {
+    top: 700px !important;
+  }
+
+  .background-image {
+    top: 180px !important;
+    height: 400px !important;
+  }
+
+  .atf-profile-image {
+    top: 180px !important;
+    height: 400px !important;
   }
 }
 
@@ -198,9 +246,6 @@
 }
 
 @media (max-width: 1200px) {
-  .atf-description-image {
-    height: 89px;
-  }
   .atf-container {
     display: flex;
     justify-content: center;
@@ -253,77 +298,120 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .atf-button {
     margin-left: 30px;
   }
 
   .atf-i-am-countainer {
-    margin-top: 15%;
+    margin-top: 55%;
   }
 
+  .background-image {
+    height: 450px;
+    top: 160px;
+  }
+
+  .atf-profile-image {
+    height: 450px;
+    top: 160px;
+  }
+
+  .atf-bottom-container {
+    top: 500px;
+  }
+
+  .atf-icon-container {
+    top: 360px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .atf-description-image {
+    height: 80px;
+  }
+
+  .atf-i-am-countainer {
+    margin-top: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .background-image {
+    height: 400px;
+    top: 180px;
+  }
+
+  .atf-profile-image {
+    height: 400px;
+    top: 180px;
+  }
+
   .atf-description-image {
     height: 60px;
   }
-}
 
-@media (max-height: 900px) and (max-width: 500px) {
   .atf-i-am-countainer {
-    margin-top: 40%;
+    margin-top: 100% !important;
+  }
+
+  .atf-bottom-container {
+    top: 520px;
   }
 
   .atf-icon-container {
-    top: 480px;
+    top: 340px;
+  }
+
+  .atf-button {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
-@media (height: 1024px) and (width: 768px) {
+@media (max-height: 900px) and (max-width: 750px) {
   .atf-i-am-countainer {
-    margin-top: 35% !important;
+    margin-top: 80% !important;
+  }
+
+  .atf-bottom-container {
+    top: 500px !important;
   }
 
   .atf-icon-container {
-    top: 550px;
+    top: 340px !important;
   }
 }
 
-@media (max-height: 750px) and (max-width: 360px) {
+@media (max-height: 900px) and (max-width: 450px) {
   .atf-i-am-countainer {
-    margin-top: 50% !important;
+    margin-top: 60% !important;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 400px) {
+  .atf-i-am-countainer {
+    margin-top: 75% !important;
+  }
+
+  .background-image {
+    height: 300px;
+    top: 160px;
+  }
+
+  .atf-profile-image {
+    height: 300px;
+    top: 160px;
+  }
+
+  .atf-bottom-container {
+    top: 380px !important;
   }
 
   .atf-icon-container {
-    top: 350px;
-  }
-}
-
-@media (max-height: 700px) and (max-width: 500px) {
-  .atf-i-am-countainer {
-    margin-top: 50% !important;
-  }
-
-  .atf-icon-container {
-    top: 270px;
-  }
-}
-
-@media (height: 1368px) and (width: 912px) {
-  .atf-i-am-countainer {
-    margin-top: 10% !important;
-  }
-}
-
-@media (height: 1280px) and (width: 853px) {
-  .atf-i-am-countainer {
-    margin-top: 10% !important;
-  }
-}
-
-@media (height: 720px) and (width: 540px) {
-  .atf-i-am-countainer {
-    margin-top: 40% !important;
+    top: 240px;
   }
 }
