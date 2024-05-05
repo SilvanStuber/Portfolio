@@ -1,0 +1,15 @@
+<div class="skills-container">
+  <div class="skill-icon-container">
+    <div class="skill-icon" *ngFor="let skill of skills">
+      <img [src]="skill.image" />
+      <p>{{ skill.description }}</p>
+    </div>
+  </div>
+  <div class="skill-description-container">
+    <h1>My skills</h1>
+    <div class="skill-line-right"></div>
+    <p>I have grown my frontend developments skills that have allowed me to create different real projects.</p>
+    <button class="skill-button">Get in touch</button>
+  </div>
+  
+</div>
