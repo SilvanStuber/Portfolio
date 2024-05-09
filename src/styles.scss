@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    color: var(--white);
 }
 
 app-atf {
@@ -37,7 +38,6 @@ app-about-me, app-my-skills {
   justify-content: center;
   align-items: center;
   z-index: 5;
-  color: var(--white);
 }
 
 
