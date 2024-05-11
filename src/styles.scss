@@ -40,6 +40,13 @@ app-about-me, app-my-skills {
   z-index: 5;
 }
 
+app-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /**************************************************** fonts ***********************************************************/
 
