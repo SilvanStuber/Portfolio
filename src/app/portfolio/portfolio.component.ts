@@ -32,7 +32,7 @@ export class PortfolioComponent {
       title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | Api',
       discription:
-        'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+        'Based on the PokéAPI, a simple library that includes details on Pokémon species, their evolutions, abilities, types, and game stats.',
       image: '/assets/img/pokedex.png',
       linkGitHub: 'https://github.com/SilvanStuber/pokedex',
       linkApp: '',

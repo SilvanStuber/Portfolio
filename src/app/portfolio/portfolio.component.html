@@ -17,27 +17,47 @@
     *ngFor="let portfolio of portfolios; let i = index"
   >
     @if (i % 2 == 0) {
-    <div>
+    <div class="portfolio-mobile-left">
       <img class="portfolio-image-right" [src]="portfolio.image" />
-      <div>
+      <div div class="text-left-aligned">
         <h2>{{ portfolio.title }}</h2>
         <h3>{{ portfolio.technologies }}</h3>
         <p>{{ portfolio.discription }}</p>
         <div>
-          <a class="portfolio-livetest-button" [href]="portfolio.linkApp" target="_blank">Live test</a>
-          <a class="portfolio-github-button" [href]="portfolio.linkGitHub" target="_blank">GitHub</a>
+          <a
+            class="portfolio-livetest-button"
+            [href]="portfolio.linkApp"
+            target="_blank"
+            >Live test</a
+          >
+          <a
+            class="portfolio-github-button"
+            [href]="portfolio.linkGitHub"
+            target="_blank"
+            >GitHub</a
+          >
         </div>
       </div>
     </div>
     } @else {
-    <div>
+    <div class="portfolio-mobile-right">
       <div class="text-right-aligned">
         <h2>{{ portfolio.title }}</h2>
         <h3>{{ portfolio.technologies }}</h3>
         <p>{{ portfolio.discription }}</p>
         <div>
-          <a class="portfolio-livetest-button" [href]="portfolio.linkApp" target="_blank">Live test</a>
-          <a class="portfolio-github-button" [href]="portfolio.linkGitHub" target="_blank">GitHub</a>
+          <a
+            class="portfolio-livetest-button"
+            [href]="portfolio.linkApp"
+            target="_blank"
+            >Live test</a
+          >
+          <a
+            class="portfolio-github-button"
+            [href]="portfolio.linkGitHub"
+            target="_blank"
+            >GitHub</a
+          >
         </div>
       </div>
       <img class="portfolio-image-left" [src]="portfolio.image" />
