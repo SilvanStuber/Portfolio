@@ -141,14 +141,14 @@
   position: absolute;
   right: 0;
   z-index: 0;
-  margin-top: 2000px;
+  margin-top: 1600px;
 }
 
 .portfolio-background-right-big {
   position: absolute;
   right: 0;
   z-index: 0;
-  margin-top: 2000px;
+  margin-top: 1600px;
 }
 
 @media (min-width: 2000px) {
@@ -286,6 +286,14 @@
 
   .portfolio-github-button {
     margin-left: 40px;
+  }
+
+  .portfolio-background-left {
+    height: 450px;
+  }
+  
+  .portfolio-background-right-small {
+    height: 700px;
   }
 }
 
