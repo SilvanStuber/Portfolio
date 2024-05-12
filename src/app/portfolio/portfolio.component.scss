@@ -42,6 +42,7 @@
   max-width: 1920px;
   margin-left: 100px;
   margin-right: 100px;
+  z-index: 2;
 }
 
 .portfolio-content {
@@ -49,6 +50,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  z-index: 2;
   > div {
     display: flex;
     justify-content: space-between;
@@ -126,6 +128,39 @@
 
 .text-right-aligned {
   text-align: right;
+}
+
+.portfolio-background-left {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  margin-top: 600px;
+}
+
+.portfolio-background-right-small {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  margin-top: 2000px;
+}
+
+.portfolio-background-right-big {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  margin-top: 2000px;
+}
+
+@media (min-width: 2000px) {
+  .portfolio-background-right-small {
+    display: none;
+  }
+}
+
+@media (max-width: 2000px) {
+  .portfolio-background-right-big {
+    display: none;
+  }
 }
 
 @media (max-width: 1400px) {
