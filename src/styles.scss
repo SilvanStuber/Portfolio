@@ -2,6 +2,9 @@
     --lightBlue:rgba(0, 190, 232, 1);
     --darkBlue: rgba(75, 71, 255, 1);
     --white: rgba(255, 255, 254, 1);
+    --lightGreen: rgba(28, 230, 182, 1);
+    --green: rgba(112, 230, 28, 1);
+    --red: rgba(230, 28, 64, 1);
     --backgroundColor: rgba(20, 29, 47, 1);
     --backgroundColorFaded: rgba(20, 29, 47, 0.8);
   }
@@ -40,7 +43,7 @@ app-about-me, app-my-skills {
   z-index: 5;
 }
 
-app-portfolio {
+app-portfolio, app-contact {
   display: flex;
   justify-content: center;
   align-items: center;
