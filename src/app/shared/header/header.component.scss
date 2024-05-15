@@ -1,6 +1,6 @@
 header {
   height: 110px;
-  width: 100vw;
+  width: calc(100vw - 16px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ header {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 40px; /* Anpassen, um die Länge der Linie zu kontrollieren */
+    width: 40px;
     height: 3px;
     background-color: var(--darkBlue);
   }
