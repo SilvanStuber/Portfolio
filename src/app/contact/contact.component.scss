@@ -2,7 +2,7 @@
   z-index: 4;
   max-width: 1920px;
   width: 100%;
-  margin-bottom: 450px;
+  margin-bottom: 350px;
 }
 
 .contact-content-container {
@@ -228,6 +228,25 @@
   }
 }
 
+.up-arrow-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1920px;
+  > div {
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-right: 100px;
+    height: 39px;
+    width: 39px;
+    background-image: url(/assets/img/up-arrow.png);
+    cursor: pointer;
+    &:hover {
+      background-image: url(/assets/img/up-arrow-blue.png);
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .contact-content-container {
     justify-content: flex-start;
@@ -265,6 +284,13 @@
   .contact-left-container > h3 {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .up-arrow-container {
+    > div {
+      margin-bottom: 100px;
+      margin-right: 50px;
+    }
   }
 }
 
