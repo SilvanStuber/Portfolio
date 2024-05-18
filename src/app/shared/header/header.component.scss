@@ -7,7 +7,7 @@ header {
   position: sticky;
   background-color: var(--backgroundColor);
   top: 0;
-  z-index: 999;
+  z-index: 799;
 }
 
 .header-container {
@@ -21,6 +21,10 @@ header {
     padding-left: 100px;
     cursor: pointer;
   }
+}
+
+.logo-header {
+  height: 48px;
 }
 
 .menu-container-header {
@@ -53,6 +57,54 @@ header {
   }
 }
 
+.mobile-menu-container {
+  position: sticky;
+  margin-top: -110px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 899;
+}
+
+.logo-header-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 31px;
+  margin-left: 46px;
+  height: 48px;
+  z-index: 999;
+}
+
+.mobile-menu-content {
+  position: relative;
+  transform: translateX(10000px);
+  display: none;
+  background-color: var(--backgroundColorMobileMenu);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 29px;
+  height: 100%;
+  > a {
+    color: var(--white);
+    text-decoration: none;
+    size: 23px;
+    width: 400;
+    &:hover {
+      color: var(--lightBlue);
+    }
+  }
+}
+
+.burgen-menu-icon {
+  height: 35px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
   .header-container {
     > img {
@@ -71,10 +123,16 @@ header {
   }
 }
 
+@media (min-width: 600px) {
+  .burgen-menu-icon {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   .header-container {
     > img {
-      padding-left: 25px;
+      padding-left: 50px;
     }
   }
 }

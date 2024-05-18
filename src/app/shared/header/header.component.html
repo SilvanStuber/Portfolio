@@ -1,10 +1,36 @@
+
 <header>
   <div class="header-container">
-  <img src="/assets/img/logo.png" alt="logo">
-  <div class="menu-container-header">
-    <a (click)="changeStyleBottomLine('About me')" [class.border-bottom-line]="aboutMeClicked" href="#aboutMe">About me</a>
-    <a (click)="changeStyleBottomLine('Skills')" [class.border-bottom-line]="skillsClicked" href="#skills">Skills</a>
-    <a (click)="changeStyleBottomLine('Portfolio')" [class.border-bottom-line]="portfolioClicked" href="#portfolio">Portfolio</a>
+    <img class="logo-header" src="/assets/img/logo.png" alt="logo" />
+    <div class="menu-container-header">
+      <a
+        *ngFor="let menuContent of menuContents.slice(0, 3)"
+        (click)="changeStyleBottomLine(menuContent.title)"
+        [class.border-bottom-line]="classActive(menuContent.title)"
+        [href]="menuContent.linkComponent"
+      >
+        {{ menuContent.title }}
+      </a>
+    </div>
   </div>
-  </div>
+  <img
+    class="burgen-menu-icon"
+    src="/assets/img/burger-menu.png"
+    alt="burger-menu"
+  />
+  
 </header>
+<div class="mobile-menu-container">
+ <div class="mobile-menu-content">
+  <img class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
+  <a
+    *ngFor="let menuContent of menuContents"
+    (click)="changeStyleBottomLine(menuContent.title)"
+    [class.border-bottom-line]="classActive(menuContent.title)"
+    [href]="menuContent.linkComponent"
+  >
+    {{ menuContent.title }}
+  </a>
+</div>
+</div>
+
