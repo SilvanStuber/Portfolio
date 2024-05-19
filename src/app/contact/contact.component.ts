@@ -15,8 +15,8 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    privacyPolicy: false,
   };
+  privacyPolicyChecked = false;
   mailTest = true;
 
   post = {
@@ -37,7 +37,6 @@ export class ContactComponent {
  * @returns {void}
  */
   onSubmit(ngForm: NgForm) {
-    console.log(this.contactData);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
@@ -53,6 +52,15 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
+  }
+
+  privacyPolicyValidation() {
+    if (!this.privacyPolicyChecked) {
+      this.privacyPolicyChecked = true;
+    } else {
+      this.privacyPolicyChecked = false;
+    }
+    
   }
 
   /**

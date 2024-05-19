@@ -66,8 +66,7 @@
         }
         <div class="checkbox-container">
           <input
-            #checkbox="ngModel"
-            [(ngModel)]="contactData.privacyPolicy"
+          (click)="privacyPolicyValidation()"
             type="checkbox"
             id="contact-checkbox"
             name="checkbox"
@@ -80,11 +79,12 @@
             and agree to the processing of my data as outlined.
           </span>
         </div>
-        @if (checkbox.touched && !checkbox.enabled) {
+        @if (!this.privacyPolicyChecked && name.valid && email.valid && message.valid ) {
         <p class="text-empty-field">Please accept the privacy policy.</p>
         }
         <div class="submit-button-container">
-          <input class="submit-button" type="submit" value="Send message :)" />
+          <input  
+          class="submit-button" type="submit" value="Send message :)" />
         </div>
       </form>
     </div>
