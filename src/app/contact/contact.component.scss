@@ -57,7 +57,7 @@
 .contact-right-container {
   width: 50%;
   max-width: 617px;
-  margin-right: 50px;
+  margin-right: 100px;
   > form {
     display: flex;
     justify-content: center;
@@ -84,21 +84,44 @@
   }
 }
 
+.input-border-false {
+  border: 1px solid var(--red) !important;
+  background-image: url(/assets/img/false-icon.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+
+.input-border-true {
+  border: 1px solid var(--green) !important;
+  background-image: url(/assets/img/right-icon.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+
 .contact-input-name-email {
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
+  background-position: right 24px center;
 }
 
 .contact-input-message {
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
   height: 202px;
   overflow-y: auto;
   overflow-x: hidden;
+  background-position: right 24px top 16px;
+}
+
+.text-empty-field {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--red);
+  margin-top: -30px;
 }
 
 .contact-blue-background-left {

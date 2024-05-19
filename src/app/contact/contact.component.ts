@@ -15,6 +15,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    privacyPolicy: false,
   };
   mailTest = true;
 
@@ -30,12 +31,13 @@ export class ContactComponent {
   };
 
   /**
-   * Handles form submission.
-   *
-   * @param {NgForm} ngForm - The form to be submitted.
-   * @returns {void}
-   */
+ * Handles form submission.
+ * 
+ * @param {NgForm} ngForm - The form to be submitted.
+ * @returns {void}
+ */
   onSubmit(ngForm: NgForm) {
+    console.log(this.contactData);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))

@@ -17,6 +17,10 @@
         <input
           #name="ngModel"
           [(ngModel)]="contactData.name"
+          [class.input-border-false]="
+            !name.valid && name.touched && !name.disabled
+          "
+          [class.input-border-true]="name.valid && name.touched"
           class="contact-input-name-email"
           type="text"
           name="name"
@@ -24,36 +28,51 @@
           required
         />
         @if (!name.valid && name.touched && !name.disabled) {
-          <span>Your name is required</span>
+        <p class="text-empty-field">Your name is required</p>
         }
         <input
           #email="ngModel"
           [(ngModel)]="contactData.email"
+          [class.input-border-false]="
+            !email.valid && email.touched && !email.disabled
+          "
+          [class.input-border-true]="email.valid && email.touched"
           class="contact-input-name-email"
           type="email"
           name="email"
           placeholder="Your email"
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-          minlength="4"
           required
         />
         @if (!email.valid && email.touched && !email.disabled) {
-          <span>Your email is required</span>
+        <p class="text-empty-field">Your email is required</p>
         }
         <textarea
           #message="ngModel"
           [(ngModel)]="contactData.message"
           class="contact-input-message"
+          [class.input-border-false]="
+            !message.valid && message.touched && !message.disabled
+          "
+          [class.input-border-true]="message.valid && message.touched"
           type="text"
           name="message"
           placeholder="Your message"
+          minlength="4"
           required
         ></textarea>
         @if (!message.valid && message.touched && !message.disabled) {
-          <span>Your message is empty</span>
+        <p class="text-empty-field">Your message is empty</p>
         }
         <div class="checkbox-container">
-          <input type="checkbox" id="contact-checkbox" name="checkbox" required/>
+          <input
+            #checkbox="ngModel"
+            [(ngModel)]="contactData.privacyPolicy"
+            type="checkbox"
+            id="contact-checkbox"
+            name="checkbox"
+            required
+          />
           <label for="contact-checkbox"></label>
           <span class="checkbox-description">
             I've read the
@@ -61,13 +80,16 @@
             and agree to the processing of my data as outlined.
           </span>
         </div>
+        @if (checkbox.touched && !checkbox.enabled) {
+        <p class="text-empty-field">Please accept the privacy policy.</p>
+        }
         <div class="submit-button-container">
           <input class="submit-button" type="submit" value="Send message :)" />
         </div>
       </form>
     </div>
   </div>
-  <div class="up-arrow-container" (click)="scrollToAtf()"><div></div></div>
+  <div class="up-arrow-container" ><div (click)="scrollToAtf()"></div></div>
 </div>
 <img
   class="contact-blue-background-left"
