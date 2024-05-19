@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class AppdataService {
   email = 'silvan.stuber1@gmail.com';
+  menuIsOpen = false;
+  imageHeaderNotVisible = false;
   aboutMeClicked = false;
   skillsClicked = false;
   portfolioClicked = false;
@@ -101,7 +103,7 @@ export class AppdataService {
     },
   ];
 
-    /**
+  /**
    * Updates the style of the bottom line based on the section clicked.
    * Resets all menu related variables and sets the clicked section variable
    * to true.
@@ -109,47 +111,67 @@ export class AppdataService {
    * @param {string} clickedSection - The name of the section that was clicked.
    * Possible values are 'About me', 'Skills', 'Portfolio'.
    */
-    changeStyleBottomLine(clickedSection: string) {
-      console.log(this.aboutMeClicked);
-      this.resetMenuVariables();
-      if (clickedSection == 'About me') {
-        this.aboutMeClicked = true;
-      } else if (clickedSection == 'Skills') {
-        this.skillsClicked = true;
-      } else if (clickedSection == 'Portfolio') {
-        this.portfolioClicked = true;
-      } else if (clickedSection == 'Contact') {
-        this.contactClicked = true;
-      }
+  changeStyleBottomLine(clickedSection: string) {
+    console.log(this.aboutMeClicked);
+    this.resetMenuVariables();
+    if (clickedSection == 'About me') {
+      this.aboutMeClicked = true;
+    } else if (clickedSection == 'Skills') {
+      this.skillsClicked = true;
+    } else if (clickedSection == 'Portfolio') {
+      this.portfolioClicked = true;
+    } else if (clickedSection == 'Contact') {
+      this.contactClicked = true;
     }
-  
-    /**
-     * Resets the menu variables to false for all sections
-     * ('About me', 'Skills', 'Portfolio').
-     */
-    resetMenuVariables() {
-      this.aboutMeClicked = false;
-      this.skillsClicked = false;
-      this.portfolioClicked = false;
-      this.contactClicked = false;
+  }
+
+  /**
+   * Resets the menu variables to false for all sections
+   * ('About me', 'Skills', 'Portfolio').
+   */
+  resetMenuVariables() {
+    this.aboutMeClicked = false;
+    this.skillsClicked = false;
+    this.portfolioClicked = false;
+    this.contactClicked = false;
+  }
+
+  /**
+   * Checks if the section is active based on the clicked state.
+   *
+   * @param {string} title - The title of the section to check.
+   * @returns {boolean} - True if the section is active, otherwise false.
+   */
+  classActive(title: string): boolean {
+    if (title == 'About me') {
+      return this.aboutMeClicked;
+    } else if (title == 'Skills') {
+      return this.skillsClicked;
+    } else if (title == 'Portfolio') {
+      return this.portfolioClicked;
+    } else if (title == 'Contact') {
+      return this.contactClicked;
     }
-  
-    /**
-     * Checks if the section is active based on the clicked state.
-     *
-     * @param {string} title - The title of the section to check.
-     * @returns {boolean} - True if the section is active, otherwise false.
-     */
-    classActive(title: string): boolean {
-      if (title == 'About me') {
-        return this.aboutMeClicked;
-      } else if (title == 'Skills') {
-        return this.skillsClicked;
-      } else if (title == 'Portfolio') {
-        return this.portfolioClicked;
-      } else if (title == 'Contact') {
-        return this.contactClicked;
-      }
-      return false;
-    }
+    return false;
+  }
+
+  /**
+   * Opens the menu by setting the menuIsOpen property to true.
+   * After a delay of 225 milliseconds, it sets the imageHeaderNotVisible property to true.
+   */
+  openMenu() {
+    this.menuIsOpen = true;
+    setTimeout(() => {
+      this.imageHeaderNotVisible = true;
+    }, 225);
+  }
+
+  /**
+   * Closes the menu by setting the menuIsOpen property to false.
+   * It also sets the imageHeaderNotVisible property to false.
+   */
+  closeMenu() {
+    this.menuIsOpen = false;
+    this.imageHeaderNotVisible = false;
+  }
 }

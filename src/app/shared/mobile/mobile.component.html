@@ -1,13 +1,22 @@
-<div class="mobile-menu-container">
-    <div class="mobile-menu-content">
-     <img class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
-     <a
-       *ngFor="let menuContent of appdata.menuContents"
-       (click)="appdata.changeStyleBottomLine(menuContent.title)"
-       [class.border-bottom-line]="appdata.classActive(menuContent.title)"
-       [href]="menuContent.linkComponent"
-     >
-       {{ menuContent.title }}
-     </a>
-   </div>
-   </div>
+<div
+  class="mobile-menu-container"
+  [class.positionMenuClose]="!appdata.menuIsOpen"
+  [class.positionMenuOpen]="appdata.menuIsOpen"
+>
+  <div class="mobile-menu-content">
+    <img class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
+    <div
+      class="menu-open-icon"
+      [class.menu-translate-icon]="appdata.menuIsOpen"
+      (click)="appdata.closeMenu()"
+    ></div>
+    <a
+      *ngFor="let menuContent of appdata.menuContents"
+      (click)="appdata.changeStyleBottomLine(menuContent.title)"
+      [class.border-bottom-line]="appdata.classActive(menuContent.title)"
+      [href]="menuContent.linkComponent"
+    >
+      {{ menuContent.title }}
+    </a>
+  </div>
+</div>

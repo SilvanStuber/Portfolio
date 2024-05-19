@@ -1,7 +1,7 @@
 
 <header>
   <div class="header-container">
-    <img class="logo-header" src="/assets/img/logo.png" alt="logo" />
+    <img class="logo-header" [class.logo-header-none]="appdata.imageHeaderNotVisible" src="/assets/img/logo.png" alt="logo" />
     <div class="menu-container-header">
       <a
         *ngFor="let menuContent of appdata.menuContents.slice(0, 3)"
@@ -14,6 +14,8 @@
     </div>
   </div>
   <img
+    (click)="appdata.openMenu()"
+    [class.logo-header-none]="appdata.imageHeaderNotVisible"
     class="burgen-menu-icon"
     src="/assets/img/burger-menu.png"
     alt="burger-menu"

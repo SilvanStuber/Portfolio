@@ -5,34 +5,81 @@
   z-index: 899;
   height: 100vh;
   width: 100vw;
-    transform: translateX(10000px);
+}
+
+.positionMenuOpen {
+  transform: translateX(0);
+  transition: all 225ms ease-in-out;
+}
+
+.positionMenuClose {
+  transform: translateX(10000px);
+  transition: all 225ms ease-in-out;
+}
+
+.logo-header-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 31px;
+  margin-left: 40px;
+  height: 48px;
+  z-index: 999;
+}
+
+.menu-open-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 31px;
+  margin-right: 40px;
+  height: 48px;
+  width: 48px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-translate-icon {
+  animation: 1.5s scrollToCross ease-in-out;
+  background-image: url(/assets/img/cross-finished.png);
+}
+
+@keyframes scrollToCross {
+  0% {
+    background-image: url(/assets/img/to-cross.png);
+    transform: rotate(45deg);
+    opacity: 0.5;
   }
-  
-  .logo-header-mobile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 31px;
-    margin-left: 46px;
-    height: 48px;
-    z-index: 999;
+
+  40% {
+    background-image: url(/assets/img/cross-progress.png);
   }
-  
-  .mobile-menu-content { 
-    background-color: var(--backgroundColorMobileMenu);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 29px;
-    height: 100%;
-    > a {
-      color: var(--white);
-      text-decoration: none;
-      size: 23px;
-      width: 400;
-      &:hover {
-        color: var(--lightBlue);
-      }
+
+  70% {
+    background-image: url(/assets/img/cross-finished.png);
+  }
+
+  100% {
+    background-image: url(/assets/img/cross-finished.png);
+  }
+}
+
+.mobile-menu-content {
+  background-color: var(--backgroundColorMobileMenu);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 29px;
+  height: 100%;
+  > a {
+    color: var(--white);
+    text-decoration: none;
+    size: 23px;
+    width: 400;
+    &:hover {
+      color: var(--lightBlue);
     }
   }
+}
