@@ -8,7 +8,7 @@
     <div
       class="menu-open-icon"
       [class.menu-translate-icon]="appdata.menuIsOpen"
-      (click)="appdata.closeMenu()"
+      (click)="closeMenu()"
     ></div>
     <a
       *ngFor="let menuContent of appdata.menuContents"

@@ -126,17 +126,6 @@ export class AppdataService {
   }
 
   /**
-   * Resets the menu variables to false for all sections
-   * ('About me', 'Skills', 'Portfolio').
-   */
-  resetMenuVariables() {
-    this.aboutMeClicked = false;
-    this.skillsClicked = false;
-    this.portfolioClicked = false;
-    this.contactClicked = false;
-  }
-
-  /**
    * Checks if the section is active based on the clicked state.
    *
    * @param {string} title - The title of the section to check.
@@ -156,22 +145,13 @@ export class AppdataService {
   }
 
   /**
-   * Opens the menu by setting the menuIsOpen property to true.
-   * After a delay of 225 milliseconds, it sets the imageHeaderNotVisible property to true.
+   * Resets the menu variables to false for all sections
+   * ('About me', 'Skills', 'Portfolio').
    */
-  openMenu() {
-    this.menuIsOpen = true;
-    setTimeout(() => {
-      this.imageHeaderNotVisible = true;
-    }, 225);
-  }
-
-  /**
-   * Closes the menu by setting the menuIsOpen property to false.
-   * It also sets the imageHeaderNotVisible property to false.
-   */
-  closeMenu() {
-    this.menuIsOpen = false;
-    this.imageHeaderNotVisible = false;
+  resetMenuVariables() {
+    this.aboutMeClicked = false;
+    this.skillsClicked = false;
+    this.portfolioClicked = false;
+    this.contactClicked = false;
   }
 }

@@ -12,4 +12,14 @@ import { AppdataService } from '../../appdata.service';
 export class HeaderComponent {
   appdata = inject(AppdataService);
   
+  /**
+   * Opens the menu by setting the menuIsOpen property to true.
+   * After a delay of 225 milliseconds, it sets the imageHeaderNotVisible property to true.
+   */
+  openMenu() {
+    this.appdata.menuIsOpen = true;
+    setTimeout(() => {
+      this.appdata.imageHeaderNotVisible = true;
+    }, 225);
+  }
 }
