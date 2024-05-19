@@ -49,6 +49,7 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
+        this.privacyPolicyChecked = false;
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }

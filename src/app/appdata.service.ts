@@ -112,7 +112,6 @@ export class AppdataService {
    * Possible values are 'About me', 'Skills', 'Portfolio'.
    */
   changeStyleBottomLine(clickedSection: string) {
-    console.log(this.aboutMeClicked);
     this.resetMenuVariables();
     if (clickedSection == 'About me') {
       this.aboutMeClicked = true;

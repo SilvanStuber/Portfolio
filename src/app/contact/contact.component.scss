@@ -122,6 +122,7 @@
   font-weight: 400;
   color: var(--red);
   margin-top: -30px;
+  margin-bottom: -24px;
 }
 
 .contact-blue-background-left {
@@ -137,6 +138,7 @@
   align-items: center;
   max-width: 100%;
   gap: 8px;
+  margin-top: -20px;
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -195,8 +197,12 @@
   font-weight: 400;
   padding: 15px 30px;
   border-radius: 10px;
-  background-color: var(--lightBlue);
   color: var(--white);
+  background-color: var(--gray);
+}
+
+.submit-button-activated {
+  background-color: var(--lightBlue) !important;
   cursor: pointer;
   &:hover {
     scale: 1.1;
