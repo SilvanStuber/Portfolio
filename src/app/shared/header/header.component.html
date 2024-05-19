@@ -4,9 +4,9 @@
     <img class="logo-header" src="/assets/img/logo.png" alt="logo" />
     <div class="menu-container-header">
       <a
-        *ngFor="let menuContent of menuContents.slice(0, 3)"
-        (click)="changeStyleBottomLine(menuContent.title)"
-        [class.border-bottom-line]="classActive(menuContent.title)"
+        *ngFor="let menuContent of appdata.menuContents.slice(0, 3)"
+        (click)="appdata.changeStyleBottomLine(menuContent.title)"
+        [class.border-bottom-line]="appdata.classActive(menuContent.title)"
         [href]="menuContent.linkComponent"
       >
         {{ menuContent.title }}
@@ -20,17 +20,5 @@
   />
   
 </header>
-<div class="mobile-menu-container">
- <div class="mobile-menu-content">
-  <img class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
-  <a
-    *ngFor="let menuContent of menuContents"
-    (click)="changeStyleBottomLine(menuContent.title)"
-    [class.border-bottom-line]="classActive(menuContent.title)"
-    [href]="menuContent.linkComponent"
-  >
-    {{ menuContent.title }}
-  </a>
-</div>
-</div>
+
 

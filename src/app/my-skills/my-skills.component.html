@@ -1,6 +1,6 @@
 <div class="skills-container">
   <div class="skill-icon-container">
-    <div class="skill-icon" *ngFor="let skill of skills">
+    <div class="skill-icon" *ngFor="let skill of appdata.skills">
       <img [src]="skill.image" />
       <p>{{ skill.description }}</p>
     </div>

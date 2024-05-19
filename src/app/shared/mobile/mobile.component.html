@@ -1,0 +1,13 @@
+<div class="mobile-menu-container">
+    <div class="mobile-menu-content">
+     <img class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
+     <a
+       *ngFor="let menuContent of appdata.menuContents"
+       (click)="appdata.changeStyleBottomLine(menuContent.title)"
+       [class.border-bottom-line]="appdata.classActive(menuContent.title)"
+       [href]="menuContent.linkComponent"
+     >
+       {{ menuContent.title }}
+     </a>
+   </div>
+   </div>

@@ -15,7 +15,7 @@
   <img class="portfolio-background-left" src="/assets/img/portfolio-blue-background-left.png" alt="portfolio-blue-background-left">
   <div
     class="portfolio-content"
-    *ngFor="let portfolio of portfolios; let i = index"
+    *ngFor="let portfolio of appdata.portfolios; let i = index"
   >
     @if (i % 2 == 0) {
     <div class="portfolio-mobile-left">
