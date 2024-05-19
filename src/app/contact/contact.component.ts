@@ -31,11 +31,11 @@ export class ContactComponent {
   };
 
   /**
- * Handles form submission.
- * 
- * @param {NgForm} ngForm - The form to be submitted.
- * @returns {void}
- */
+   * Handles form submission.
+   *
+   * @param {NgForm} ngForm - The form to be submitted.
+   * @returns {void}
+   */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
@@ -49,7 +49,7 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-        this.privacyPolicyChecked = false;
+      this.privacyPolicyChecked = false;
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
@@ -61,7 +61,6 @@ export class ContactComponent {
     } else {
       this.privacyPolicyChecked = false;
     }
-    
   }
 
   /**

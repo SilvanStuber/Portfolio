@@ -8,8 +8,7 @@
   --backgroundColor: rgba(20, 29, 47, 1);
   --backgroundColorFaded: rgba(20, 29, 47, 0.8);
   --backgroundColorMobileMenu: rgba(20, 29, 47, 0.7);
-  --gray: rgba(182, 182, 182, 1)
-
+  --gray: rgba(182, 182, 182, 1);
 }
 
 * {
@@ -34,7 +33,6 @@ body {
   position: relative;
   top: 0;
 }
-
 
 app-atf {
   min-height: calc(100vh - 110px);
@@ -184,5 +182,3 @@ app-footer {
     background-color: var(--darkBlue);
   }
 }
-
-
