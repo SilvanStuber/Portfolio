@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { AppdataService } from '../appdata.service';
+import { AppdataService } from '../../appdata.service';
 
 @Component({
   selector: 'app-my-skills',

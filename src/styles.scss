@@ -52,14 +52,18 @@ app-my-skills {
 }
 
 app-portfolio,
-app-contact,
-app-footer {
+app-contact, app-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
   z-index: 5;
+}
+
+app-impressum {
+  min-height: calc(100vh - 110px);
+  max-height: 100% !important;
 }
 
 /**************************************************** fonts ***********************************************************/

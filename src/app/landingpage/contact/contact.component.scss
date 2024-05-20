@@ -2,7 +2,6 @@
   z-index: 4;
   max-width: 1920px;
   width: 100%;
-  margin-bottom: 350px;
 }
 
 .contact-content-container {
@@ -128,8 +127,8 @@
 .contact-blue-background-left {
   position: absolute;
   left: 0;
-  height: 500px;
-  margin-top: 400px;
+  height: 600px;
+  margin-top: 500px;
 }
 
 .checkbox-container {
@@ -264,7 +263,7 @@
   max-width: 1920px;
   > div {
     margin-top: 100px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
     margin-right: 100px;
     height: 39px;
     width: 39px;
@@ -289,8 +288,8 @@
   .contact-blue-background-left {
     position: absolute;
     left: 0;
-    height: 360px;
-    margin-top: 540px;
+    height: 400px;
+    margin-top: 840px;
   }
 
   .contact-left-container {
@@ -334,8 +333,7 @@
     height: 400px;
     position: absolute;
     left: 0;
-    height: 360px;
-    margin-top: 650px;
+    margin-top: 1100px;
   }
 }
 @media (max-width: 570px) {
