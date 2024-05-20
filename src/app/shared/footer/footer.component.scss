@@ -1,4 +1,7 @@
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 291px;
   width: 100vw;
   background-color: var(--backgroundColor);
@@ -9,9 +12,13 @@ footer {
 
 .footer-content-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
+  width: 100%;
+  max-width: 1720px;
+  margin-left: 100px;
+  margin-right: 100px;
   > div {
     > p {
       font-size: 23px;
