@@ -11,6 +11,4 @@ import { AppdataService } from '../appdata.service';
 })
 export class MySkillsComponent {
   appdata = inject(AppdataService);
-  }
-  
-
+}

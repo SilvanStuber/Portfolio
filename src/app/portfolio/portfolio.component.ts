@@ -5,7 +5,7 @@ import { AppdataService } from '../appdata.service';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [ CommonModule ],
+  imports: [CommonModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })

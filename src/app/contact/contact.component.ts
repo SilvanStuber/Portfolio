@@ -55,6 +55,11 @@ export class ContactComponent {
     }
   }
 
+  /**
+   * Toggles the privacy policy checked state.
+   * If the privacy policy is not checked, it sets the state to checked.
+   * If the privacy policy is already checked, it sets the state to unchecked.
+   */
   privacyPolicyValidation() {
     if (!this.privacyPolicyChecked) {
       this.privacyPolicyChecked = true;
