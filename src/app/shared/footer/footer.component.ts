@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
   loadImpressum() {
     this.router.navigateByUrl('/impressum');
   }

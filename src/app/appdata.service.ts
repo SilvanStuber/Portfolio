@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AppdataService {
-  email = 'silvan.stuber1@gmail.com';
+  email = 'info@silvanstuber.ch';
   menuIsOpen = false;
   imageHeaderNotVisible = false;
   aboutMeClicked = false;

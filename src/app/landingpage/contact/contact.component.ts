@@ -17,10 +17,10 @@ export class ContactComponent {
     message: '',
   };
   privacyPolicyChecked = false;
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://silvanstuber.ch/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
