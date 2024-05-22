@@ -165,8 +165,17 @@
 }
 
 .checkbox-description {
-  font-size: 14px;
-  font-weight: 400;
+  p {
+    display: inline;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .checkbox-link {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
 
 .checkbox-text {

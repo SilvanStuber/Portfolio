@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,7 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  constructor(private router: Router) {}
   http = inject(HttpClient);
   contactData = {
     name: '',
@@ -77,5 +79,9 @@ export class ContactComponent {
       top: 0,
       behavior: 'smooth',
     });
+  }
+
+  privacyPolicy() {
+    this.router.navigateByUrl('/privacypolicy');
   }
 }

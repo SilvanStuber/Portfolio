@@ -4,4 +4,36 @@
   max-width: 1920px;
   padding-top: 20px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+  .privacypolicy-container {
+    margin-left: 50px;
+    margin-right: 50px;
   }
+}
+
+@media (max-width: 600px) {
+  .privacypolicy-container {
+    > h2 {
+      font-size: 14px;
+    }
+    > h3 {
+      font-size: 13px;
+    }
+    > h4 {
+      font-size: 12px;
+    }
+    > p {
+      font-size: 10px;
+    }
+    > ul {
+      > li {
+        font-size: 10px;
+      }
+    }
+    > a {
+      font-size: 10px;
+    }
+  }
+}

@@ -73,11 +73,13 @@
             required
           />
           <label for="contact-checkbox"></label>
-          <span class="checkbox-description">
-            I've read the
-            <a href="" class="checkbox-link">privacy policy</a>
-            and agree to the processing of my data as outlined.
-          </span>
+          <div class="checkbox-description">
+            <p>I've read the</p>
+            <p (click)="privacyPolicy()" class="checkbox-link">
+              privacy policy
+            </p>
+            <p>and agree to the processing of my data as outlined.</p>
+          </div>
         </div>
         @if (!this.privacyPolicyChecked && name.valid && email.valid &&
         message.valid ) {
