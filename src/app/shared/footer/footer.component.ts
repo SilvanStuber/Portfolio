@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { AppdataService } from '../../appdata.service';
+
 
 @Component({
   selector: 'app-footer',
@@ -9,8 +10,5 @@ import { Router } from '@angular/router';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  constructor(private router: Router) {}
-  loadImpressum() {
-    this.router.navigateByUrl('/impressum');
-  }
+  appdata = inject(AppdataService);
 }

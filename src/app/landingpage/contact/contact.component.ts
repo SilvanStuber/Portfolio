@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { AppdataService } from '../../appdata.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,15 +11,16 @@ import { Router } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  constructor(private router: Router) {}
+  appdata = inject(AppdataService);
   http = inject(HttpClient);
   contactData = {
     name: '',
     email: '',
     message: '',
+    checkbox: false,
   };
   privacyPolicyChecked = false;
-  mailTest = false;
+  messageWasSent = false;
 
   post = {
     endPoint: 'https://silvanstuber.ch/sendMail.php',
@@ -39,21 +40,33 @@ export class ContactComponent {
    * @returns {void}
    */
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.visibleMessageConfirmation();
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
     }
+  }
+
+  /**
+   * Displays a confirmation message indicating that a message was sent.
+   *
+   * This function sets the `messageWasSent` property to `true`, indicating that a message was sent.
+   * After 4 seconds (4000 milliseconds), it resets the `messageWasSent` property to `false`.
+   */
+  visibleMessageConfirmation() {
+    this.messageWasSent = true;
+    setTimeout(() => {
+      this.messageWasSent = false;
+    }, 4000);
   }
 
   /**
@@ -70,18 +83,10 @@ export class ContactComponent {
   }
 
   /**
-   * Smoothly scrolls the window to the top.
-   * This function uses the `window.scrollTo` method with a smooth scrolling behavior
-   * to scroll the window to the top (above the fold).
+   * Navigates to the privacy policy page and scrolls to the top.
    */
-  scrollToAtf() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
-
-  privacyPolicy() {
-    this.router.navigateByUrl('/privacypolicy');
+  loadPrivacyPolicy() {
+    this.appdata.goToContent('/privacypolicy');
+    this.appdata.scrollToTop();
   }
 }

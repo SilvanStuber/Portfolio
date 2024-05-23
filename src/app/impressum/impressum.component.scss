@@ -1,3 +1,22 @@
+.back-arrow-container {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  transform: rotate(-90deg);
+  > div {
+    margin-top: 100px;
+    margin-bottom: 24px;
+    margin-right: 100px;
+    height: 39px;
+    width: 39px;
+    background-image: url(/assets/img/up-arrow.png);
+    cursor: pointer;
+    &:hover {
+      background-image: url(/assets/img/up-arrow-blue.png);
+    }
+  }
+}
+
 .impressum-container {
   height: calc(100vh - 410px);
   min-height: 100%;
@@ -17,15 +36,22 @@
 }
 
 @media (max-height: 900px) {
-    .impressum-container {
-        padding-top: 100px;
-        padding-bottom: 100px;
-  }}
+  .impressum-container {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+
+  .back-arrow-container {
+    right: 38px !important;
+  }
+}
 
 @media (max-width: 1000px) {
   .impressum-container {
     height: calc(100vh - 510px);
   }
+
+  .back-arrow-container {
+    right: 50px;
+  }
 }
-
-

@@ -66,16 +66,18 @@
         }
         <div class="checkbox-container">
           <input
+            #checkbox="ngModel"
+            [(ngModel)]="contactData.checkbox"
             (click)="privacyPolicyValidation()"
             type="checkbox"
             id="contact-checkbox"
-            name="checkbox"
+            name="subscribe"
             required
           />
           <label for="contact-checkbox"></label>
           <div class="checkbox-description">
             <p>I've read the</p>
-            <p (click)="privacyPolicy()" class="checkbox-link">
+            <p (click)="loadPrivacyPolicy()" class="checkbox-link">
               privacy policy
             </p>
             <p>and agree to the processing of my data as outlined.</p>
@@ -86,7 +88,11 @@
         <p class="text-empty-field">Please accept the privacy policy.</p>
         }
         <div class="submit-button-container">
+          <p class="thank-you-text" [class.d-none]="!messageWasSent">
+            THANKS FOR YOUR MESSAGE!
+          </p>
           <input
+            [class.d-none]="messageWasSent"
             [class.submit-button-activated]="
               name.valid &&
               email.valid &&
@@ -107,7 +113,9 @@
       </form>
     </div>
   </div>
-  <div class="up-arrow-container"><div (click)="scrollToAtf()"></div></div>
+  <div class="up-arrow-container">
+    <div (click)="appdata.scrollToTop()"></div>
+  </div>
 </div>
 <img
   class="contact-blue-background-left"

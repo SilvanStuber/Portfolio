@@ -12,7 +12,7 @@
     ></div>
     <a
       *ngFor="let menuContent of appdata.menuContents"
-      (click)="appdata.changeStyleBottomLine(menuContent.title)"
+      (click)="closeMenu(); appdata.changeStyleBottomLine(menuContent.title)"
       [class.border-bottom-line]="appdata.classActive(menuContent.title)"
       [href]="menuContent.linkComponent"
     >

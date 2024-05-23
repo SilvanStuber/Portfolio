@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AppdataService {
+  constructor(public router: Router) {}
   email = 'info@silvanstuber.ch';
   menuIsOpen = false;
   imageHeaderNotVisible = false;
@@ -81,7 +83,7 @@ export class AppdataService {
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
       image: '/assets/img/join.png',
       linkGitHub: 'https://github.com/SilvanStuber/join',
-      linkApp: '',
+      linkApp: 'https://silvanstuber.ch/join/loginpage.html',
     },
     {
       title: 'Sharkie',
@@ -90,7 +92,7 @@ export class AppdataService {
         'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
       image: '/assets/img/sharkie.png',
       linkGitHub: 'https://github.com/SilvanStuber/Sharkie',
-      linkApp: '',
+      linkApp: 'https://silvanstuber.ch/sharkie',
     },
     {
       title: 'Pokédex',
@@ -99,7 +101,7 @@ export class AppdataService {
         'Based on the PokéAPI, a simple library that includes details on Pokémon species, their evolutions, abilities, types, and game stats.',
       image: '/assets/img/pokedex.png',
       linkGitHub: 'https://github.com/SilvanStuber/pokedex',
-      linkApp: '',
+      linkApp: 'https://silvanstuber.ch/pokedex/',
     },
   ];
 
@@ -152,5 +154,26 @@ export class AppdataService {
     this.skillsClicked = false;
     this.portfolioClicked = false;
     this.contactClicked = false;
+  }
+
+  /**
+   * Navigates to the specified application path.
+   *
+   * @param {string} appPath - The path to navigate to within the application.
+   */
+  goToContent(appPath: string) {
+    this.router.navigateByUrl(appPath);
+  }
+
+  /**
+   * Smoothly scrolls the window to the top.
+   * This function uses the `window.scrollTo` method with a smooth scrolling behavior
+   * to scroll the window to the top (above the fold).
+   */
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   }
 }

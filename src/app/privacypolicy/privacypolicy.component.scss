@@ -1,3 +1,22 @@
+.back-arrow-container {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  transform: rotate(-90deg);
+  > div {
+    margin-top: 100px;
+    margin-bottom: 24px;
+    margin-right: 100px;
+    height: 39px;
+    width: 39px;
+    background-image: url(/assets/img/up-arrow.png);
+    cursor: pointer;
+    &:hover {
+      background-image: url(/assets/img/up-arrow-blue.png);
+    }
+  }
+}
+
 .privacypolicy-container {
   margin-left: 100px;
   margin-right: 100px;
@@ -10,6 +29,10 @@
   .privacypolicy-container {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .back-arrow-container {
+    right: 40px;
   }
 }
 
