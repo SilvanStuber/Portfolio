@@ -1,8 +1,10 @@
 .back-arrow-container {
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
-  top: 0;
-  right: 80px;
-  transform: rotate(-90deg);
+  max-width: 1920px;
+  top: 32px;
+  width: 100%;
   > div {
     margin-top: 100px;
     margin-bottom: 24px;
@@ -10,6 +12,7 @@
     height: 39px;
     width: 39px;
     background-image: url(/assets/img/up-arrow.png);
+    transform: rotate(-90deg);
     cursor: pointer;
     &:hover {
       background-image: url(/assets/img/up-arrow-blue.png);
@@ -18,26 +21,35 @@
 }
 
 .privacypolicy-container {
-  margin-left: 100px;
-  margin-right: 100px;
-  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.privacypolicy-conten-container {
   padding-top: 20px;
   padding-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 1720px;
 }
 
 @media (max-width: 1000px) {
-  .privacypolicy-container {
+  .privacypolicy-conten-container {
     margin-left: 50px;
     margin-right: 50px;
   }
 
   .back-arrow-container {
-    right: 40px;
+    > div {
+      margin-right: 50px;
+    }
   }
 }
 
 @media (max-width: 600px) {
-  .privacypolicy-container {
+  .privacypolicy-conten-container {
     > h2 {
       font-size: 14px;
     }

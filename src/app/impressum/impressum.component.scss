@@ -1,8 +1,10 @@
 .back-arrow-container {
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
-  top: 0;
-  right: 100px;
-  transform: rotate(-90deg);
+  max-width: 1920px;
+  top: 32px;
+  width: 100%;
   > div {
     margin-top: 100px;
     margin-bottom: 24px;
@@ -10,6 +12,7 @@
     height: 39px;
     width: 39px;
     background-image: url(/assets/img/up-arrow.png);
+    transform: rotate(-90deg);
     cursor: pointer;
     &:hover {
       background-image: url(/assets/img/up-arrow-blue.png);
@@ -40,10 +43,6 @@
     padding-top: 140px;
     padding-bottom: 100px;
   }
-
-  .back-arrow-container {
-    right: 38px !important;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -52,6 +51,8 @@
   }
 
   .back-arrow-container {
-    right: 50px;
+    > div {
+      margin-right: 50px;
+    }
   }
 }
