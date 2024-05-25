@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './../shared/header/header.component';
 import { MobileComponent } from './../shared/mobile/mobile.component';
@@ -8,6 +8,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './../shared/footer/footer.component';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-landingpage',
@@ -26,4 +28,8 @@ import { FooterComponent } from './../shared/footer/footer.component';
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.scss',
 })
-export class LandingpageComponent {}
+export class LandingpageComponent implements OnInit {
+  ngOnInit() {
+    AOS.init();
+  }
+}
