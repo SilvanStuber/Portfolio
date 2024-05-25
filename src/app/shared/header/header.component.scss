@@ -40,6 +40,7 @@ header {
     text-decoration: none;
     size: 29px;
     width: 400;
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
     &:hover {
       color: var(--lightBlue);
     }

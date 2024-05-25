@@ -1,5 +1,6 @@
 .skills-container {
   padding-bottom: 80px;
+  padding-top: 40px;
   margin-left: 100px;
   margin-right: 100px;
   max-width: 1720px;
@@ -24,11 +25,10 @@
   gap: 10px;
   height: 100px;
   width: 88px;
-  cursor: pointer;
   > img {
     height: 60px;
     width: 60px;
-    transition: transform 125 ease-in-out;
+    transition: transform 225 ease-in-out;
     &:hover {
       transform: translateY(-10px);
     }
@@ -67,9 +67,10 @@
   margin-right: 100px;
   cursor: pointer;
   z-index: 4;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
   &:hover {
     background-color: var(--darkBlue);
-    scale: 1.1;
+    scale: 1.05;
   }
 }
 

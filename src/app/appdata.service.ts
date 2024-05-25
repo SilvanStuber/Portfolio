@@ -171,6 +171,7 @@ export class AppdataService {
    * to scroll the window to the top (above the fold).
    */
   scrollToTop() {
+    this.router.navigateByUrl('');
     window.scrollTo({
       top: 0,
       behavior: 'smooth',

@@ -49,6 +49,7 @@ footer {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
   &::before {
     content: "";
     position: absolute;
@@ -72,6 +73,7 @@ footer {
     > img {
       cursor: pointer;
       height: 30px;
+      transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
       &:hover {
         scale: 1.1;
       }

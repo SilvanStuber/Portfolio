@@ -52,7 +52,8 @@ app-my-skills {
 }
 
 app-portfolio,
-app-contact, app-footer {
+app-contact,
+app-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +62,8 @@ app-contact, app-footer {
   z-index: 5;
 }
 
-app-impressum, app-privacypolicy {
+app-impressum,
+app-privacypolicy {
   min-height: calc(100vh - 110px);
   max-height: 100% !important;
 }
@@ -163,13 +165,16 @@ app-impressum, app-privacypolicy {
   border: 3px dotted #ffffff;
 }
 
-#aboutMe,
+#aboutMe {
+  scroll-margin-top: 100px;
+}
+
 #skills {
-  scroll-margin-top: 240px;
+  scroll-margin-top: 170px;
 }
 
 #portfolio {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 180px;
 }
 
 .border-bottom-line {
@@ -185,4 +190,19 @@ app-impressum, app-privacypolicy {
     height: 3px;
     background-color: var(--darkBlue);
   }
+}
+
+@media (max-height: 900px) {
+  #aboutMe {
+    scroll-margin-top: 40px;
+  }
+  
+  #skills {
+    scroll-margin-top: 40px;
+  }
+  
+  #portfolio {
+    scroll-margin-top: 40px;
+  }
+  
 }
