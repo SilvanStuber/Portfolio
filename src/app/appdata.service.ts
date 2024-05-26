@@ -16,19 +16,19 @@ export class AppdataService {
   menuContents = [
     {
       linkComponent: '#aboutMe',
-      title: 'About me',
+      title: 'ABOUT',
     },
     {
       linkComponent: '#skills',
-      title: 'Skills',
+      title: 'SKILLS',
     },
     {
       linkComponent: '#portfolio',
-      title: 'Portfolio',
+      title: 'PORTFOLIO',
     },
     {
       linkComponent: '#contact',
-      title: 'Contact',
+      title: 'CONTACT',
     },
   ];
 

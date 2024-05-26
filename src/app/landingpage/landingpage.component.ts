@@ -11,8 +11,6 @@ import { FooterComponent } from './../shared/footer/footer.component';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { AppdataService } from '../appdata.service';
-import { IfStmt } from '@angular/compiler';
-
 @Component({
   selector: 'app-landingpage',
   standalone: true,

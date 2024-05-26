@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, Output, inject } from '@angular/core';
 import { AppdataService } from '../../appdata.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
