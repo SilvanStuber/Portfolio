@@ -1,7 +1,7 @@
 <header>
   <div class="header-container">
     <img
-    (click)="appdata.scrollToTop()"
+    (click)="appdata.loadATF(); appdata.resetMenuVariables()"
       class="logo-header"
       [class.logo-header-none]="appdata.imageHeaderNotVisible"
       src="/assets/img/logo.png"

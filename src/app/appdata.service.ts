@@ -171,10 +171,35 @@ export class AppdataService {
    * to scroll the window to the top (above the fold).
    */
   scrollToTop() {
-    this.router.navigateByUrl('');
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
+  }
+
+  /**
+   * Scrolls the window to the bottom of the page smoothly.
+   */
+  scrollToBottom() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+  }
+
+  /**
+   * Loads the above-the-fold content and scrolls to the top.
+   */
+  loadATF() {
+    this.goToContent('');
+    this.scrollToTop();
+  }
+
+  /**
+   * Loads the contact section and scrolls to the bottom.
+   */
+  loadContact() {
+    this.goToContent('');
+    this.scrollToBottom();
   }
 }

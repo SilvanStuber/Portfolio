@@ -14,4 +14,5 @@ import { AppdataService } from '../appdata.service';
 })
 export class ImpressumComponent {
   appdata = inject(AppdataService);
-}
+  }
+

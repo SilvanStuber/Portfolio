@@ -1,82 +1,84 @@
-<div>
-  <div class="portfolio-headline-container">
-    <div class="portfolio-headline">
-      <div class="portfolio-headline-line-left"></div>
-      <h1>Portfolio</h1>
-      <div class="portfolio-headline-line-right"></div>
+<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <div>
+    <div class="portfolio-headline-container">
+      <div class="portfolio-headline">
+        <div class="portfolio-headline-line-left"></div>
+        <h1>Portfolio</h1>
+        <div class="portfolio-headline-line-right"></div>
+      </div>
+      <p>
+        Explore a selection of my work here - Interact with projects to see my
+        skills in action.
+      </p>
     </div>
-    <p>
-      Explore a selection of my work here - Interact with projects to see my
-      skills in action.
-    </p>
   </div>
-</div>
-<div class="portfolio-content-container">
-  <img
-    class="portfolio-background-left"
-    src="/assets/img/portfolio-blue-background-left.png"
-    alt="portfolio-blue-background-left"
-  />
-  <div
-    class="portfolio-content"
-    *ngFor="let portfolio of appdata.portfolios; let i = index"
-  >
-    @if (i % 2 == 0) {
-    <div class="portfolio-mobile-left">
-      <img class="portfolio-image-right" [src]="portfolio.image" />
-      <div div class="text-left-aligned">
-        <h2>{{ portfolio.title }}</h2>
-        <h3>{{ portfolio.technologies }}</h3>
-        <p>{{ portfolio.discription }}</p>
-        <div>
-          <a
-            class="portfolio-livetest-button"
-            [href]="portfolio.linkApp"
-            target="_blank"
-            >Live test</a
-          >
-          <a
-            class="portfolio-github-button"
-            [href]="portfolio.linkGitHub"
-            target="_blank"
-            >GitHub</a
-          >
+  <div class="portfolio-content-container">
+    <img
+      class="portfolio-background-left"
+      src="/assets/img/portfolio-blue-background-left.png"
+      alt="portfolio-blue-background-left"
+    />
+    <div
+      class="portfolio-content"
+      *ngFor="let portfolio of appdata.portfolios; let i = index"
+    >
+      @if (i % 2 == 0) {
+      <div class="portfolio-mobile-left">
+        <img class="portfolio-image-right" [src]="portfolio.image" />
+        <div div class="text-left-aligned">
+          <h2>{{ portfolio.title }}</h2>
+          <h3>{{ portfolio.technologies }}</h3>
+          <p>{{ portfolio.discription }}</p>
+          <div>
+            <a
+              class="portfolio-livetest-button"
+              [href]="portfolio.linkApp"
+              target="_blank"
+              >Live test</a
+            >
+            <a
+              class="portfolio-github-button"
+              [href]="portfolio.linkGitHub"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    } @else {
-    <div class="portfolio-mobile-right">
-      <div class="text-right-aligned">
-        <h2>{{ portfolio.title }}</h2>
-        <h3>{{ portfolio.technologies }}</h3>
-        <p>{{ portfolio.discription }}</p>
-        <div>
-          <a
-            class="portfolio-livetest-button"
-            [href]="portfolio.linkApp"
-            target="_blank"
-            >Live test</a
-          >
-          <a
-            class="portfolio-github-button"
-            [href]="portfolio.linkGitHub"
-            target="_blank"
-            >GitHub</a
-          >
+      } @else {
+      <div class="portfolio-mobile-right">
+        <div class="text-right-aligned">
+          <h2>{{ portfolio.title }}</h2>
+          <h3>{{ portfolio.technologies }}</h3>
+          <p>{{ portfolio.discription }}</p>
+          <div>
+            <a
+              class="portfolio-livetest-button"
+              [href]="portfolio.linkApp"
+              target="_blank"
+              >Live test</a
+            >
+            <a
+              class="portfolio-github-button"
+              [href]="portfolio.linkGitHub"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
         </div>
+        <img class="portfolio-image-left" [src]="portfolio.image" />
       </div>
-      <img class="portfolio-image-left" [src]="portfolio.image" />
+      }
     </div>
-    }
+    <img
+      class="portfolio-background-right-small"
+      src="/assets/img/portfolio-blue-background-right-small.png"
+      alt="portfolio-blue-background-right-small"
+    />
+    <img
+      class="portfolio-background-right-big"
+      src="/assets/img/portfolio-blue-background-right-big.png"
+      alt="portfolio-blue-background-right-big"
+    />
   </div>
-  <img
-    class="portfolio-background-right-small"
-    src="/assets/img/portfolio-blue-background-right-small.png"
-    alt="portfolio-blue-background-right-small"
-  />
-  <img
-    class="portfolio-background-right-big"
-    src="/assets/img/portfolio-blue-background-right-big.png"
-    alt="portfolio-blue-background-right-big"
-  />
 </div>
