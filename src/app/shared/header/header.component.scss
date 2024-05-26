@@ -80,7 +80,11 @@ header {
 @media (max-width: 400px) {
   .header-container {
     > img {
-      padding-left: 50px;
+      padding-left: 25px;
     }
+  }
+
+  .burgen-menu-icon {
+    margin-right: 25px;
   }
 }

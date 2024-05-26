@@ -20,6 +20,6 @@ export class HeaderComponent {
     this.appdata.menuIsOpen = true;
     setTimeout(() => {
       this.appdata.imageHeaderNotVisible = true;
-    }, 225);
+    }, 200);
   }
 }
