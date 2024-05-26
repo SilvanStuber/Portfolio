@@ -56,11 +56,11 @@ export class LandingpageComponent implements OnInit {
    * @param {number} scrollPosition - The current scroll position of the window.
    */
   loadMenuStyleScrollPosition(scrollPosition: number) {
-    if (scrollPosition > 500 && scrollPosition < 1450) {
+    if (scrollPosition > 500 && scrollPosition < 1350) {
       this.appdata.changeStyleBottomLine('About me');
-    } else if (scrollPosition > 1450 && scrollPosition < 1800) {
+    } else if (scrollPosition > 1350 && scrollPosition < 1700) {
       this.appdata.changeStyleBottomLine('Skills');
-    } else if (scrollPosition > 1800 && scrollPosition < 3300) {
+    } else if (scrollPosition > 1700 && scrollPosition < 3300) {
       this.appdata.changeStyleBottomLine('Portfolio');
     } else if (scrollPosition > 3300) {
       this.appdata.changeStyleBottomLine('Contact');

@@ -68,7 +68,8 @@
   margin-right: 100px;
   cursor: pointer;
   z-index: 4;
-  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    background-color 0.5s ease, color 0.5s ease;
   &:hover {
     background-color: var(--darkBlue);
     scale: 1.05;

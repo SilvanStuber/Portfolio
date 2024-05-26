@@ -78,7 +78,8 @@
       font-family: "Poppins";
       width: 100%;
       cursor: pointer;
-      transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
+      transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+        background-color 0.5s ease, color 0.5s ease;
       &:hover {
         border: 1px solid var(--lightGreen);
       }
@@ -215,7 +216,8 @@
 .submit-button-activated {
   background-color: var(--lightBlue) !important;
   cursor: pointer;
-  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+    background-color 0.5s ease, color 0.5s ease;
   &:hover {
     scale: 1.1;
   }
@@ -293,7 +295,8 @@
     width: 39px;
     background-image: url(/assets/img/up-arrow.png);
     cursor: pointer;
-    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s ease, color 0.5s ease;
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1),
+      background-color 0.5s ease, color 0.5s ease;
     &:hover {
       background-image: url(/assets/img/up-arrow-blue.png);
     }
@@ -396,5 +399,3 @@
     font-size: 10px;
   }
 }
-
-
