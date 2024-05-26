@@ -44,11 +44,10 @@ export class LandingpageComponent implements OnInit {
   /**
    * Listens for the window scroll event and updates the menu style based on the scroll position.
    * @param {Event} event - The scroll event.
-   * @HostListener('window:scroll', ['$event'])
    */
+  @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: Event): void {
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition);
     this.loadMenuStyleScrollPosition(scrollPosition);
   }
 
@@ -57,13 +56,13 @@ export class LandingpageComponent implements OnInit {
    * @param {number} scrollPosition - The current scroll position of the window.
    */
   loadMenuStyleScrollPosition(scrollPosition: number) {
-    if (scrollPosition > 300 && scrollPosition < 1100) {
+    if (scrollPosition > 500 && scrollPosition < 1450) {
       this.appdata.changeStyleBottomLine('About me');
-    } else if (scrollPosition > 1100 && scrollPosition < 1600) {
+    } else if (scrollPosition > 1450 && scrollPosition < 1800) {
       this.appdata.changeStyleBottomLine('Skills');
-    } else if (scrollPosition > 1600 && scrollPosition < 3100) {
+    } else if (scrollPosition > 1800 && scrollPosition < 3300) {
       this.appdata.changeStyleBottomLine('Portfolio');
-    } else if (scrollPosition > 3100) {
+    } else if (scrollPosition > 3300) {
       this.appdata.changeStyleBottomLine('Contact');
     } else {
       this.appdata.resetMenuVariables();

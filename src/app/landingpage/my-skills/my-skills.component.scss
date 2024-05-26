@@ -46,6 +46,7 @@
   > h1 {
     font-size: 90px;
     font-weight: 700;
+    z-index: 900;
   }
   > p {
     font-size: 16px;
@@ -82,6 +83,7 @@
   min-width: 52px;
   width: calc(((100vw - 1720px) / 2) - 48px);
   background-color: var(--darkBlue);
+  z-index: 1;
 }
 
 .skill-blue-background-big-image {

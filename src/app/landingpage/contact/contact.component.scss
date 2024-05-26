@@ -25,6 +25,7 @@
   min-width: 44px;
   width: calc(((100vw - 1720px) / 2) - 50px);
   background-color: var(--darkBlue);
+  z-index: 1;
 }
 
 .contact-left-container {
@@ -38,6 +39,7 @@
     > h2 {
       font-size: 90px;
       font-weight: 700;
+      z-index: 900;
     }
   }
   > h3 {
