@@ -3,6 +3,7 @@
   justify-content: space-between;
   max-width: 1920px;
   width: 100%;
+  margin-top: 210px;
 }
 
 .background-image {
@@ -75,6 +76,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
+  z-index: 10;
 }
 
 .atf-icon-distance-line {
@@ -304,6 +306,14 @@
   .atf-icon-container {
     top: 460px;
   }
+
+  .atf-icon-distance-line {
+    min-width: 50px;
+  }
+
+  .atf-icon-scroll-section {
+    margin-left: 80px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -380,6 +390,18 @@
   }
 }
 
+@media (max-width: 500px) {
+  .atf-icon-distance-line {
+    min-width: 23px;
+    max-width: 23px;
+    width: calc(((100vw - 1720px) / 2) - 75px)
+  }
+
+  .atf-icon-scroll-section {
+    margin-left: 55px;
+  }
+}
+
 @media (max-height: 900px) and (max-width: 750px) {
   .atf-i-am-countainer {
     margin-top: 80% !important;
@@ -391,6 +413,12 @@
 
   .atf-icon-container {
     top: 360px !important;
+  }
+}
+
+@media (max-height: 950px) {
+  .atf-container {
+    margin-top: 190px;
   }
 }
 

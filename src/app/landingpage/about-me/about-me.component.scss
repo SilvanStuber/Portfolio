@@ -1,24 +1,25 @@
 .abm-blue-background-image {
   position: absolute;
   right: 0;
-  margin-bottom: 80px;
+  z-index: 6;
 }
 
 .abm-blue-background-big-image {
   position: absolute;
   right: 0;
   margin-bottom: 80px;
+  z-index: 6;
 }
 
 .about-me-container {
-  padding-top: 80px;
+  padding-top: 75px;
   display: flex;
   justify-content: space-between;
   max-width: 1720px;
   margin-left: 100px;
   margin-right: 100px;
   width: 100%;
-  padding-bottom: 80px;
+  z-index: 7;
 }
 
 .abm-left-container {
@@ -74,6 +75,12 @@
   margin-left: 457px;
 }
 
+@media (max-height: 900px) {
+  .abm-blue-background-image {
+    height: 600px;
+  }
+}
+
 @media (min-height: 1200px) {
   .abm-blue-background-image {
     margin-right: 100 !important;
@@ -112,12 +119,13 @@
 
 @media (max-width: 1200px) {
   .abm-left-container {
-    width: 70%;
+    width: 90%;
     min-width: 320px;
   }
 
   .about-me-container {
-    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .abm-right-container {
@@ -132,15 +140,19 @@
 }
 
 @media (max-width: 500px) {
-  .about-me-container {
-    margin-left: 24px;
-    margin-right: 24px;
+  .abm-left-container {
+    > h1 {
+      font-size: 40px !important;
+    }
   }
-}
 
-@media (max-width: 400px) {
   .abm-left-container {
     min-width: 250px;
+  }
+  
+  .about-me-container {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 

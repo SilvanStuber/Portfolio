@@ -16,19 +16,19 @@ export class AppdataService {
   menuContents = [
     {
       linkComponent: '#aboutMe',
-      title: 'ABOUT',
+      title: 'About me',
     },
     {
       linkComponent: '#skills',
-      title: 'SKILLS',
+      title: 'Skills',
     },
     {
       linkComponent: '#portfolio',
-      title: 'PORTFOLIO',
+      title: 'Portfolio',
     },
     {
       linkComponent: '#contact',
-      title: 'CONTACT',
+      title: 'Contact',
     },
   ];
 
@@ -178,28 +178,10 @@ export class AppdataService {
   }
 
   /**
-   * Scrolls the window to the bottom of the page smoothly.
-   */
-  scrollToBottom() {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    });
-  }
-
-  /**
    * Loads the above-the-fold content and scrolls to the top.
    */
   loadATF() {
     this.goToContent('');
     this.scrollToTop();
-  }
-
-  /**
-   * Loads the contact section and scrolls to the bottom.
-   */
-  loadContact() {
-    this.goToContent('');
-    this.scrollToBottom();
   }
 }

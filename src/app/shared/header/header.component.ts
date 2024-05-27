@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Output, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AppdataService } from '../../appdata.service';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -21,6 +21,6 @@ export class HeaderComponent {
     this.appdata.menuIsOpen = true;
     setTimeout(() => {
       this.appdata.imageHeaderNotVisible = true;
-    }, 200);
+    }, 440);
   }
 }

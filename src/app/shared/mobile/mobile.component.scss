@@ -9,21 +9,21 @@
 
 .positionMenuOpen {
   transform: translateX(0);
-  transition: all 225ms ease-in-out;
+  transition: all 425ms ease-in-out;
 }
 
 .positionMenuClose {
   transform: translateX(10000px);
-  transition: all 225ms ease-in-out;
+  transition: all 425ms ease-in-out;
 }
 
 .logo-header-mobile {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 31px;
-  margin-left: 40px;
-  height: 48px;
+  margin-top: 35px;
+  height: 40px;
+  width: 149px;
   z-index: 999;
 }
 
@@ -83,12 +83,13 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .menu-open-icon {
     margin-right: 25px;
   }
 
   .logo-header-mobile {
-    margin-left: 25px;
+    margin-left: 0;
+    padding-left: 25px;
   }
 }
