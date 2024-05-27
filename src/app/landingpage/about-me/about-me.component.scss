@@ -12,7 +12,7 @@
 }
 
 .about-me-container {
-  padding-top: 75px;
+  padding-top: 120px;
   display: flex;
   justify-content: space-between;
   max-width: 1720px;
@@ -137,6 +137,11 @@
       padding-left: 0;
     }
   }
+
+  .about-me-container {
+    padding-top: 0;
+    margin-top: 240px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -149,7 +154,7 @@
   .abm-left-container {
     min-width: 250px;
   }
-  
+
   .about-me-container {
     margin-left: 25px;
     margin-right: 25px;

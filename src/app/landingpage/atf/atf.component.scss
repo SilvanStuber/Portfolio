@@ -156,18 +156,13 @@
     margin-top: 300px;
   }
 
-  .atf-icon-container {
-    top: 450px;
-  }
 
   .atf-bottom-container {
     top: 750px;
   }
-}
 
-@media (min-height: 1000px) and (max-width: 1000px) {
   .atf-icon-container {
-    top: 550px !important;
+    top: 460px;
   }
 }
 
@@ -183,19 +178,11 @@
   .atf-bottom-container {
     top: 590px;
   }
-
-  .atf-icon-container {
-    top: 620px;
-  }
 }
 
 @media (min-height: 1200px) and (max-width: 1400px) {
   .atf-bottom-container {
     top: 640px;
-  }
-
-  .atf-icon-container {
-    top: 570px !important;
   }
 }
 
@@ -226,10 +213,6 @@
 
   .atf-bottom-container {
     top: 500px !important;
-  }
-
-  .atf-icon-container {
-    top: 700px !important;
   }
 
   .background-image {
@@ -303,16 +286,16 @@
     display: none;
   }
 
-  .atf-icon-container {
-    top: 460px;
-  }
-
   .atf-icon-distance-line {
     min-width: 50px;
   }
 
   .atf-icon-scroll-section {
     margin-left: 80px;
+  }
+
+  .atf-icon-container {
+    top: 440px;
   }
 }
 
@@ -340,8 +323,9 @@
   }
 
   .atf-icon-container {
-    top: 360px;
+    top: 340px;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -377,10 +361,6 @@
     top: 520px;
   }
 
-  .atf-icon-container {
-    top: 340px;
-  }
-
   .atf-button {
     font-size: 20px;
     padding-top: 10px;
@@ -394,7 +374,7 @@
   .atf-icon-distance-line {
     min-width: 23px;
     max-width: 23px;
-    width: calc(((100vw - 1720px) / 2) - 75px)
+    width: calc(((100vw - 1720px) / 2) - 75px);
   }
 
   .atf-icon-scroll-section {
@@ -411,9 +391,6 @@
     top: 500px !important;
   }
 
-  .atf-icon-container {
-    top: 360px !important;
-  }
 }
 
 @media (max-height: 950px) {
@@ -446,34 +423,20 @@
   .atf-bottom-container {
     top: 380px !important;
   }
-
-  .atf-icon-container {
-    top: 240px !important;
-  }
 }
 
 @media (max-height: 900px) and (max-width: 390px) {
   .atf-i-am-countainer {
     margin-top: 60% !important;
   }
-
-  .atf-icon-container {
-    top: 380px !important;
-  }
 }
 
-@media (max-height: 800px) and (max-width: 375px) {
-  .atf-icon-container {
-    top: 280px !important;
-  }
-}
-
-@media (max-height: 700px) and (max-width: 375px) {
+@media (max-height: 740px) and (max-width: 375px) {
   .atf-i-am-countainer {
     margin-top: 65% !important;
   }
 
   .atf-icon-container {
-    top: 240px !important;
+    top: 240px;
   }
 }
