@@ -4,7 +4,7 @@
   [class.positionMenuOpen]="appdata.menuIsOpen"
 >
   <div class="mobile-menu-content">
-    <img class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
+    <img (click)="appdata.loadATF(); appdata.resetMenuVariables(); closeMenu()" class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
     <div
       class="menu-open-icon"
       [class.menu-translate-icon]="appdata.menuIsOpen"

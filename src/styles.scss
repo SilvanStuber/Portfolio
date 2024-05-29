@@ -161,7 +161,7 @@ app-privacypolicy {
 }
 
 #aboutMe {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 0px;
 }
 
 #skills {
@@ -192,9 +192,9 @@ app-privacypolicy {
 }
 
 @media (max-height: 1200px) {
-app-atf {
-  padding-bottom: 0px;
-}
+  app-atf {
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-height: 900px) {
