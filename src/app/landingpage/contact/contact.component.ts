@@ -2,17 +2,20 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { AppdataService } from '../../appdata.service';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
   appdata = inject(AppdataService);
   http = inject(HttpClient);
+  placeholders: { [key: string]: string } = {};
+  constructor(private translate: TranslateService) {}
   contactData = {
     name: '',
     email: '',
@@ -32,6 +35,31 @@ export class ContactComponent {
       },
     },
   };
+
+  placeholdersName: '' | undefined;
+  placeholdersEmail: '' | undefined;
+  placeholdersMessage: '' | undefined;
+  sendeMessageButtonContent: '' | undefined;
+
+  /**
+   * Initializes component and sets placeholders for name, email, and message fields.
+   */
+  ngDoCheck() {
+    this.translate
+      .get([
+        'CONTACT.INPUT-NAME',
+        'CONTACT.INPUT-EMAIL',
+        'CONTACT.INPUT-MESSAGE',
+        'CONTACT.PRIVACY-POLICY-BUTTON',
+      ])
+      .subscribe((translations) => {
+        this.placeholdersName = translations['CONTACT.INPUT-NAME'];
+        this.placeholdersEmail = translations['CONTACT.INPUT-EMAIL'];
+        this.placeholdersMessage = translations['CONTACT.INPUT-MESSAGE'];
+        this.sendeMessageButtonContent =
+          translations['CONTACT.PRIVACY-POLICY-BUTTON'];
+      });
+  }
 
   /**
    * Handles form submission.

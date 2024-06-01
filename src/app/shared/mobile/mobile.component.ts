@@ -2,11 +2,12 @@ import { Component, Input, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { CommonModule } from '@angular/common';
 import { AppdataService } from '../../appdata.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mobile',
   standalone: true,
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent, CommonModule, TranslateModule],
   templateUrl: './mobile.component.html',
   styleUrl: './mobile.component.scss',
 })

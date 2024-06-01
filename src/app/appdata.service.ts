@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AppdataService {
-  constructor(public router: Router) {}
+  constructor(public router: Router, public translate: TranslateService) {}
   email = 'info@silvanstuber.ch';
   menuIsOpen = false;
   imageHeaderNotVisible = false;
@@ -13,22 +14,25 @@ export class AppdataService {
   skillsClicked = false;
   portfolioClicked = false;
   contactClicked = false;
+  language = 'en';
+  currentImageHeader = '/assets/img/english.png';
+  currentImageAtf = '/assets/img/atf-description.png';
   menuContents = [
     {
       linkComponent: '#aboutMe',
-      title: 'About me',
+      title: 'ABOUT_ME',
     },
     {
       linkComponent: '#skills',
-      title: 'Skills',
+      title: 'SKILLS',
     },
     {
       linkComponent: '#portfolio',
-      title: 'Portfolio',
+      title: 'PORTFOLIO',
     },
     {
       linkComponent: '#contact',
-      title: 'Contact',
+      title: 'CONTACT',
     },
   ];
 
@@ -79,8 +83,7 @@ export class AppdataService {
     {
       title: 'Join',
       technologies: 'JavaScript | HTML | CSS',
-      discription:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
+      discription: 'JOIN',
       image: '/assets/img/join.png',
       linkGitHub: 'https://github.com/SilvanStuber/join',
       linkApp: 'https://silvanstuber.ch/join/loginpage.html',
@@ -88,8 +91,7 @@ export class AppdataService {
     {
       title: 'Sharkie',
       technologies: 'JavaScript | HTML | CSS',
-      discription:
-        'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
+      discription: 'SHARKIE',
       image: '/assets/img/sharkie.png',
       linkGitHub: 'https://github.com/SilvanStuber/Sharkie',
       linkApp: 'https://silvanstuber.ch/sharkie',
@@ -97,8 +99,7 @@ export class AppdataService {
     {
       title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | Api',
-      discription:
-        'Based on the PokéAPI, a simple library that includes details on Pokémon species, their evolutions, abilities, types, and game stats.',
+      discription: 'POKEDEX',
       image: '/assets/img/pokedex.png',
       linkGitHub: 'https://github.com/SilvanStuber/pokedex',
       linkApp: 'https://silvanstuber.ch/pokedex/',
@@ -183,5 +184,33 @@ export class AppdataService {
   loadATF() {
     this.goToContent('');
     this.scrollToTop();
+  }
+
+  /**
+   * Switches the language between English and German.
+   * Updates the `language` property and the translation service.
+   */
+  switchLanguage() {
+    if (this.language == 'en') {
+      this.language = 'de';
+      this.translate.use('de');
+    } else {
+      this.language = 'en';
+      this.translate.use('en');
+    }
+  }
+
+  /**
+   * Switches the displayed images based on the current language.
+   * Updates `currentImageHeader` and `currentImageAtf` properties.
+   */
+  switchImage() {
+    if (this.language == 'en') {
+      this.currentImageHeader = '/assets/img/german.png';
+      this.currentImageAtf = '/assets/img/atf-description.png';
+    } else {
+      this.currentImageHeader = '/assets/img/english.png';
+      this.currentImageAtf = '/assets/img/atf-description-german.png';
+    }
   }
 }

@@ -1,6 +1,50 @@
 {
-      "ABOUT": "About me",
-      "SKILLS": "Skills",
-      "PORTFOLIO": "Portfolio",
-      "CONTACT": "Contact"
+  "MENU": {
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+  },
+
+  "TALK-BUTTON": "Let’s talk!",
+
+  "ABOUT": {
+    "HEADLINE": "About me",
+    "FIRST-DESCRIPTION": "Hello, I am a Frontend developer living in Seedorf in the canton of Bern, Switzerland. With my knowledge of HTML JavaScript with the framework Angular, I have many skills to create web applications, which can be seen with my knowledge in CSS.",
+    "SECOND-DESCRIPTION": " I became enthusiastic about technology early on in my childhood and started my career in automotive engineering. My fascination with IT grew more and more over the years. From assembling my own PC to software development.",
+    "LAST-DESCRIPTION": "I am characterized by my complex way of thinking and the corresponding analytical skills. With my acquired knowledge, in conjunction with my communication skills, I am also able to meet major challenges."
+  },
+
+  "SKILLS": {
+    "HEADLINE": "My skills",
+    "DESCRIPTION": "I have grown my frontend developments skills that have allowed me to create different real projects."
+  },
+
+  "PORTFOLIO": {
+    "HEADLINE": "Portfolio",
+    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "LIVE-TEST-BUTTON": "Live test",
+    "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "SHARKIE": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
+    "POKEDEX": "Based on the PokéAPI, a simple library that includes details on Pokémon species, their evolutions, abilities, types, and game stats."
+  },
+
+  "CONTACT": {
+    "HEADLINE": "Contact",
+    "SECOND-HEADLINE": "Got a problem to solve?",
+    "FIRST-DESCRIPTION": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "SECOND-DESCRIPTION": "Need a Frontend developer? Contact me!",
+    "INPUT-NAME": "Your name",
+    "INPUT-EMAIL": "Your email",
+    "INPUT-MESSAGE": "Your message",
+    "INPUT-NAME-FAULT-DESCRIPTION": "Your name is required",
+    "INPUT-EMAIL-FAULT-DESCRIPTION": "Your email is required",
+    "INPUT-MESSAGE-FAULT-DESCRIPTION": "Your message is empty",
+    "PRIVACY-POLICY-DESCRIPTION-FIRST": "I've read the",
+    "PRIVACY-POLICY-DESCRIPTION-LINK": "privacy policy",
+    "PRIVACY-POLICY-DESCRIPTION-SECOND": "and agree to the processing of my data as outlined.",
+    "PRIVACY-POLICY-FAULT-DESCRIPTION": "Please accept the privacy policy.",
+    "PRIVACY-POLICY-BUTTON": "Send message :)",
+    "PRIVACY-POLICY-SENDE-MESSAGE": "THANKS FOR YOUR MESSAGE!"
+  }
 }

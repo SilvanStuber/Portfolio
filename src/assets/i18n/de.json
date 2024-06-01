@@ -1,6 +1,50 @@
 {
-    "ABOU ME": "Über mich",
+  "MENU": {
+    "ABOUT_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Kontakt"
- }
+  },
+
+  "TALK-BUTTON": "Lass uns reden!",
+
+  "ABOUT": {
+    "HEADLINE": "Über mich",
+    "FIRST-DESCRIPTION": "Hallo, ich bin ein Frontend-Entwickler und lebe in Seedorf im Kanton Bern, Schweiz. Mit meinem Wissen in HTML und JavaScript mit dem Framework Angular habe ich viele Fähigkeiten, um Webanwendungen zu erstellen, was man an meinem Wissen in CSS sehen kann.",
+    "SECOND-DESCRIPTION": "Schon früh in meiner Kindheit begeisterte ich mich für Technologie und begann meine Karriere im Automobilbau. Meine Faszination für IT wuchs im Laufe der Jahre immer mehr. Vom Zusammenbau meines eigenen PCs bis hin zur Softwareentwicklung.",
+    "LAST-DESCRIPTION": "Ich zeichne mich durch meine komplexe Denkweise und die entsprechenden analytischen Fähigkeiten aus. Mit meinem erworbenen Wissen und meinen Kommunikationsfähigkeiten bin ich auch in der Lage, große Herausforderungen zu meistern."
+  },
+
+  "SKILLS": {
+    "HEADLINE": "Meine Fähigkeiten",
+    "DESCRIPTION": "Ich habe meine Frontend-Entwicklungsfähigkeiten weiterentwickelt, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen."
+  },
+
+  "PORTFOLIO": {
+    "HEADLINE": "Portfolio",
+    "DESCRIPTION": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "LIVE-TEST-BUTTON": "Live-Test",
+    "JOIN": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "SHARKIE": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Helfen Sie Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+    "POKEDEX": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Details zu Pokémon-Arten, deren Entwicklungen, Fähigkeiten, Typen und Spielstatistiken enthält."
+  },
+
+  "CONTACT": {
+    "HEADLINE": "Kontakt",
+    "SECOND-HEADLINE": "Haben Sie ein Problem zu lösen?",
+    "FIRST-DESCRIPTION": "Kontaktieren Sie mich über dieses Formular, ich freue mich darauf, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "SECOND-DESCRIPTION": "Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!",
+    "INPUT-NAME": "Ihr Name",
+    "INPUT-EMAIL": "Ihre E-Mail",
+    "INPUT-MESSAGE": "Ihre Nachricht",
+    "INPUT-NAME-FAULT-DESCRIPTION": "Ihr Name ist erforderlich",
+    "INPUT-EMAIL-FAULT-DESCRIPTION": "Ihre E-Mail ist erforderlich",
+    "INPUT-MESSAGE-FAULT-DESCRIPTION": "Ihre Nachricht ist leer",
+    "PRIVACY-POLICY-DESCRIPTION-FIRST": "Ich habe die",
+    "PRIVACY-POLICY-DESCRIPTION-LINK": "Datenschutzerklärung",
+    "PRIVACY-POLICY-DESCRIPTION-SECOND": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "PRIVACY-POLICY-FAULT-DESCRIPTION": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+    "PRIVACY-POLICY-BUTTON": "Nachricht senden :)",
+    "PRIVACY-POLICY-SENDE-MESSAGE": "DANKE FÜR IHRE NACHRICHT!"
+  }
+}

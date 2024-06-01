@@ -83,6 +83,20 @@
   }
 }
 
+.image-switch-language-mobile {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  &:hover {
+    scale: 1.05;
+    box-shadow: inset;
+    box-shadow: 0 2px 8px var(--lightBlue);
+  }
+}
+
 @media (max-width: 500px) {
   .menu-open-icon {
     margin-right: 25px;

@@ -14,10 +14,10 @@
   <div class="atf-i-am-countainer">
     <img
       class="atf-description-image"
-      src="/assets/img/atf-description.png"
+      [src]="appdata.currentImageAtf"
       alt="atf-description"
     />
-    <a href="#contact" class="atf-button">Let’s talk!</a>
+    <a href="#contact" class="atf-button">{{ "TALK-BUTTON" | translate }}</a>
   </div>
 </div>
 <div class="atf-icon-container">

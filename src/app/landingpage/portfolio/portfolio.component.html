@@ -8,12 +8,11 @@
     <div class="portfolio-headline-container">
       <div class="portfolio-headline">
         <div class="portfolio-headline-line-left"></div>
-        <h1>Portfolio</h1>
+        <h1>{{ "PORTFOLIO.HEADLINE" | translate }}</h1>
         <div class="portfolio-headline-line-right"></div>
       </div>
       <p>
-        Explore a selection of my work here - Interact with projects to see my
-        skills in action.
+        {{ "PORTFOLIO.DESCRIPTION" | translate }}
       </p>
     </div>
   </div>
@@ -33,13 +32,13 @@
         <div div class="text-left-aligned">
           <h2>{{ portfolio.title }}</h2>
           <h3>{{ portfolio.technologies }}</h3>
-          <p>{{ portfolio.discription }}</p>
+          <p>{{ "PORTFOLIO." + portfolio.discription | translate }}</p>
           <div>
             <a
               class="portfolio-livetest-button"
               [href]="portfolio.linkApp"
               target="_blank"
-              >Live test</a
+              >{{ "PORTFOLIO.LIVE-TEST-BUTTON" | translate }}</a
             >
             <a
               class="portfolio-github-button"
@@ -55,13 +54,13 @@
         <div class="text-right-aligned">
           <h2>{{ portfolio.title }}</h2>
           <h3>{{ portfolio.technologies }}</h3>
-          <p>{{ portfolio.discription }}</p>
+          <p>{{ "PORTFOLIO." + portfolio.discription | translate }}</p>
           <div>
             <a
               class="portfolio-livetest-button"
               [href]="portfolio.linkApp"
               target="_blank"
-              >Live test</a
+              >{{ "PORTFOLIO.LIVE-TEST-BUTTON" | translate }}</a
             >
             <a
               class="portfolio-github-button"

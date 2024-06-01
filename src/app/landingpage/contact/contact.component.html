@@ -8,32 +8,29 @@
     <div class="contact-left-container">
       <div class="contact-headline-container">
         <div class="contact-line-left"></div>
-        <h2>Contact</h2>
+        <h2>{{ "CONTACT.HEADLINE" | translate }}</h2>
       </div>
-      <h3>Got a problem to solve?</h3>
+      <h3>{{ "CONTACT.SECOND-HEADLINE" | translate }}</h3>
       <p>
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
+        {{ "CONTACT.FIRST-DESCRIPTION" | translate }}
       </p>
-      <p>Need a Frontend developer? Contact me!</p>
+      <p>{{ "CONTACT.SECOND-DESCRIPTION" | translate }}</p>
     </div>
     <div class="contact-right-container">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <input
           #name="ngModel"
           [(ngModel)]="contactData.name"
-          [class.input-border-false]="
-            !name.valid && name.touched && !name.disabled
-          "
+          [class.input-border-false]="!name.valid && name.touched && !name.disabled"
           [class.input-border-true]="name.valid && name.touched"
           class="contact-input-name-email"
           type="text"
           name="name"
-          placeholder="Your name"
+          [placeholder]="placeholdersName"
           required
         />
         @if (!name.valid && name.touched && !name.disabled) {
-        <p class="text-empty-field">Your name is required</p>
+        <p class="text-empty-field">{{ "CONTACT.INPUT-NAME-FAULT-DESCRIPTION" | translate }}</p>
         }
         <input
           #email="ngModel"
@@ -45,12 +42,12 @@
           class="contact-input-name-email"
           type="email"
           name="email"
-          placeholder="Your email"
+          [placeholder]="placeholdersEmail"
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           required
         />
         @if (!email.valid && email.touched && !email.disabled) {
-        <p class="text-empty-field">Your email is required</p>
+        <p class="text-empty-field">{{ "CONTACT.INPUT-EMAIL-FAULT-DESCRIPTION" | translate }}</p>
         }
         <textarea
           #message="ngModel"
@@ -62,12 +59,12 @@
           [class.input-border-true]="message.valid && message.touched"
           type="text"
           name="message"
-          placeholder="Your message"
+          [placeholder]="placeholdersMessage"
           minlength="4"
           required
         ></textarea>
         @if (!message.valid && message.touched && !message.disabled) {
-        <p class="text-empty-field">Your message is empty</p>
+        <p class="text-empty-field">{{ "CONTACT.INPUT-MESSAGE-FAULT-DESCRIPTION" | translate }}</p>
         }
         <div class="checkbox-container">
           <input
@@ -81,20 +78,20 @@
           />
           <label for="contact-checkbox"></label>
           <div class="checkbox-description">
-            <p>I've read the</p>
+            <p>{{ "CONTACT.PRIVACY-POLICY-DESCRIPTION-FIRST" | translate }}</p>
             <p (click)="loadPrivacyPolicy()" class="checkbox-link">
-              privacy policy
+              {{ "CONTACT.PRIVACY-POLICY-DESCRIPTION-LINK" | translate }}
             </p>
-            <p>and agree to the processing of my data as outlined.</p>
+            <p>{{ "CONTACT.PRIVACY-POLICY-DESCRIPTION-SECOND" | translate }}</p>
           </div>
         </div>
         @if (!this.privacyPolicyChecked && name.valid && email.valid &&
         message.valid ) {
-        <p class="text-empty-field">Please accept the privacy policy.</p>
+        <p class="text-empty-field">{{ "CONTACT.PRIVACY-POLICY-FAULT-DESCRIPTION" | translate }}</p>
         }
         <div class="submit-button-container">
           <p class="thank-you-text" [class.d-none]="!messageWasSent">
-            THANKS FOR YOUR MESSAGE!
+            {{ "CONTACT.PRIVACY-POLICY-SENDE-MESSAGE" | translate }}
           </p>
           <input
             [class.d-none]="messageWasSent"
@@ -112,7 +109,7 @@
             "
             class="submit-button"
             type="submit"
-            value="Send message :)"
+            [value]="sendeMessageButtonContent"
           />
         </div>
       </form>

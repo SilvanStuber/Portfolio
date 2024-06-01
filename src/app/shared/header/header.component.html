@@ -14,8 +14,14 @@
         [class.border-bottom-line]="appdata.classActive(menuContent.title)"
         [href]="menuContent.linkComponent"
       >
-        {{ menuContent.title }}
+        {{ "MENU." + menuContent.title | translate }}
       </a>
+      <img
+        (click)="appdata.switchLanguage(); appdata.switchImage()"
+        class="image-switch-language"
+        [src]="appdata.currentImageHeader"
+        alt=""
+      />
     </div>
   </div>
   <img

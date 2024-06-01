@@ -4,7 +4,12 @@
   [class.positionMenuOpen]="appdata.menuIsOpen"
 >
   <div class="mobile-menu-content">
-    <img (click)="appdata.loadATF(); appdata.resetMenuVariables(); closeMenu()" class="logo-header-mobile" src="/assets/img/logo.png" alt="logo" />
+    <img
+      (click)="appdata.loadATF(); appdata.resetMenuVariables(); closeMenu()"
+      class="logo-header-mobile"
+      src="/assets/img/logo.png"
+      alt="logo"
+    />
     <div
       class="menu-open-icon"
       [class.menu-translate-icon]="appdata.menuIsOpen"
@@ -16,7 +21,13 @@
       [class.border-bottom-line]="appdata.classActive(menuContent.title)"
       [href]="menuContent.linkComponent"
     >
-      {{ menuContent.title }}
+      {{ "MENU." + menuContent.title | translate }}
     </a>
+    <img
+      (click)="appdata.switchLanguage(); appdata.switchImage()"
+      class="image-switch-language-mobile"
+      [src]="appdata.currentImageHeader"
+      alt=""
+    />
   </div>
 </div>
