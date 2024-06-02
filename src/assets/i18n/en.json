@@ -54,7 +54,93 @@
 
   "IMPRESSUM": {
     "CONTACT": "Contact"
-  }
+  },
 
-  
+  "PRIVACY-POLICY": {
+    "LAST-UPDATED": "Last updated on: 22.05.2024",
+    "INTRO": "We place great importance on transparency in handling personal data. This privacy policy provides information about what personal data we collect, for what purpose, and to whom we disclose it. To ensure high transparency, this privacy policy is regularly reviewed and updated.",
+    "SERVICES-USED": "1. Which services we use",
+    "CONTACT-INFO": "2. Contact information",
+    "CONTACT-DESC": "If you have any questions or concerns about the protection of your data by us, you can reach us at any time via email at info@silvanstuber.ch. The person responsible for data processing conducted through this website is:",
+    "GENERAL-PRINCIPLES": "3. General principles",
+    "DATA-COLLECTION-TITLE": "3.1 What data do we collect from you and from whom do we receive this data",
+    "DATA-COLLECTION-DESC": "Primarily, we process personal data that you provide to us or that we collect when operating our website. We may also receive personal data about you from third parties. The categories of such data can include:",
+    "DATA-CATEGORIES": {
+      "PERSONAL-DATA": "Personal details (name, address, birth dates, etc.);",
+      "CONTACT-DATA": "Contact information (mobile number, email address, etc.);",
+      "FINANCIAL-DATA": "Financial data (e.g., account details);",
+      "ONLINE-IDENTIFIERS": "Online identifiers (e.g., cookie ID, IP addresses);",
+      "LOCATION-TRAFFIC-DATA": "Location and traffic data;",
+      "AUDIO-VISUAL-DATA": "Audio and visual recordings;",
+      "SENSITIVE-DATA": "Special category data (e.g., biometric data or information about your health)."
+    },
+    "TITLE_3_2": "3.2 Under what conditions do we process your data?",
+    "TEXT_3_2": "We treat your data confidentially and according to the purposes specified in this privacy policy. We ensure transparent and proportionate processing. If we are exceptionally unable to adhere to these principles, the data processing may still be lawful due to a justification. Justifications may include:",
+    "CONSENT": "Your consent;",
+    "CONTRACT": "the performance of a contract or pre-contractual measures;",
+    "LEGITIMATE_INTERESTS": "our legitimate interests, provided your interests do not override them.",
+    "TITLE_3_3": "3.3 How can you withdraw your consent?",
+    "TEXT_3_3": "If you have given us consent to process your personal data for certain purposes, we will process your data within the scope of this consent unless we have another justification. You can withdraw your consent at any time by sending an email to the address mentioned in the imprint. Data processing carried out before the withdrawal is not affected by this.",
+    "TITLE_3_4": "3.4 In what cases can we share your data with third parties?",
+    "PRINCIPLE": "a. Principle",
+    "TEXT_3_4_A": "We may need to use the services of third parties or affiliated companies and entrust them with the processing of your data (so-called data processors). Categories of recipients include:",
+    "ACCOUNTING": "Accounting, fiduciary, and auditing companies;",
+    "CONSULTING": "Consulting firms (legal advice, taxes, etc.);",
+    "IT_SERVICES": "IT service providers (web hosting, support, cloud services, website design, etc.);",
+    "PAYMENT_SERVICES": "Payment service providers;",
+    "AD_SERVICES": "Providers of tracking, conversion, and advertising services.",
+    "TEXT_3_4_B": "We ensure that these third parties and our affiliated companies comply with data protection requirements and treat your personal data confidentially. We may also be obliged to disclose your personal data to authorities.",
+    "SOCIAL_MEDIA_VISIT": "b. Visiting our social media channels",
+    "TEXT_3_4_B_SOCIAL_MEDIA": "We may embed links to our social media channels on our website. This is evident to you (typically through corresponding symbols). By clicking on the symbols, you are redirected to our social media channels. The social media providers will then know that you are accessing their platform from our website. They may use the collected data for their own purposes. We note that we have no knowledge of the content of the transmitted data or its use by the operators.",
+    "INTERNATIONAL_TRANSFER": "c. Transfer abroad",
+    "TEXT_3_4_C": "Data processing may involve transferring your personal data to companies abroad. These companies are obliged to protect data to the same extent as we are. The transfer can take place worldwide. If the data protection level does not match that of Switzerland, we conduct a preliminary risk assessment and ensure contractually that the same protection is guaranteed as in Switzerland (e.g., using the new EU Commission's Standard Contractual Clauses or other legally required measures). If our risk assessment is negative, we take additional technical measures to protect your data. You can access the EU Commission's Standard Contractual Clauses at the following link.",
+
+    "TITLE_3_5": "3.5 How long do we retain your data?",
+    "PARAGRAPH_1_3_5": "We retain personal data only as long as necessary to fulfill the purposes for which it was collected. Data stored during your visit to our website is kept for twelve months. An exception applies to analytics and tracking data, which may be retained longer. We keep contract data longer due to legal requirements. Specifically, we must retain business communications, concluded contracts, and booking records for up to 10 years. If we no longer need such data for service provision, the data will be blocked and used only for accounting and tax purposes.",
+    "TITLE_3_6": "3.6 How do we protect your data?",
+    "PARAGRAPH_1_3_6": "We will store your data securely and take all reasonable measures to protect it from loss, access, misuse, or alterations. Our contractors and employees with access to your data are obliged to comply with data protection regulations. In some cases, it will be necessary to forward your requests to affiliated companies. Even in these cases, your data will be treated confidentially. We use the SSL (Secure Socket Layer) procedure within our website, along with the highest level of encryption supported by your browser.",
+    "TITLE_3_7": "3.7 What rights do you have?",
+    "SUBTITLE_A": "a. Right of access",
+    "PARAGRAPH_1_A": "You can request information about the data we hold about you at any time. Please send your request for information together with proof of identity to info@silvanstuber.ch. You also have the right to receive your data in a commonly used format if we process your data automatically, and if:",
+    "LIST_ITEM_1_A": "You have given your consent for the processing of this data; or",
+    "LIST_ITEM_2_A": "The data was disclosed in connection with the conclusion or performance of a contract.",
+    "PARAGRAPH_2_A": "We may restrict or refuse the provision of information or data release if this conflicts with our legal obligations, legitimate interests, public interests, or the interests of a third party. Processing your request is subject to the statutory processing period of 30 days. We may extend this period due to high request volumes, legal or technical reasons, or if we need more information from you. You will be informed of the extension in a timely manner, at least in text form.",
+    "SUBTITLE_B": "b. Deletion and correction",
+    "PARAGRAPH_1_B": "You can request the deletion or correction of your data at any time. We may refuse the request if legal regulations require us to retain the data for longer or unchanged, or if a legal justification opposes your request. Please note that exercising your rights may conflict with contractual agreements and have corresponding effects on contract performance (e.g., early contract termination or cost implications).",
+
+    "C-COURT-PROCEEDINGS": {
+      "TITLE": "c. Legal proceedings",
+      "CONTENT": "If you are affected by the processing of personal data, you have the right to enforce your rights in court or to file a complaint with the competent supervisory authority. The competent supervisory authority in Switzerland is the Federal Data Protection and Information Commissioner: https://www.edoeb.admin.ch"
+    },
+    "CHANGES-TO-PRIVACY-POLICY": {
+      "TITLE": "3.8 Changes to the privacy policy",
+      "CONTENT": "We may change this privacy policy at any time. The changes will be published on www.silvanstuber.ch, and you will not be separately informed."
+    },
+    "INDIVIDUAL-DATA-PROCESSING-OPERATIONS": {
+      "TITLE": "4. Individual data processing operations"
+    },
+    "PROVIDING-WEBSITE-AND-LOGFILES": {
+      "TITLE": "4.1 Providing the Website and Creating Logfiles",
+      "INFORMATION-TITLE": "What Information Do We Receive and How Do We Use It?",
+      "INFORMATION-CONTENT": "By visiting www.silvanstuber.ch, certain data is automatically stored on our servers or on servers of services and products we use and/or have installed for purposes of system administration, statistics, security, or tracking. This includes:",
+      "INFORMATION-LIST": {
+        "ITEM1": "the name of your internet service provider;",
+        "ITEM2": "your IP address (if applicable);",
+        "ITEM3": "the version of your browser software;",
+        "ITEM4": "the operating system of the computer used to access the URL;",
+        "ITEM5": "the date and time of access;",
+        "ITEM6": "the website from which you visit the URL;",
+        "ITEM7": "the search terms you used to find the URL."
+      },
+      "WHY-PROCESS-DATA-TITLE": "Why Are We Allowed to Process This Data?",
+      "WHY-PROCESS-DATA-CONTENT": "This data cannot be assigned to a specific person and there is no merging of this data with other data sources. The log files are stored to ensure the functionality of the website and to ensure the security of our information technology systems. This constitutes our legitimate interest.",
+      "PREVENT-DATA-COLLECTION-TITLE": "How Can You Prevent Data Collection?",
+      "PREVENT-DATA-COLLECTION-CONTENT": "The data is only stored as long as necessary to achieve the purpose of its collection. Accordingly, the data is deleted after the end of each session. The storage of log files is mandatory for the operation of the website, so you have no right to object.",
+      "BRAINBOX-GENERATORS": {
+        "TITLE": "BrainBox Generators",
+        "CONTENT": "BrainBox Generators is a service that",
+        "CONTENT-2": "to detect all data protection-relevant services on a website and, among other things, to help with the creation of the privacy policy. No personal data is collected or processed."
+      }
+    }
+  }
 }

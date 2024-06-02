@@ -64,9 +64,8 @@ header {
   cursor: pointer;
   transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   &:hover {
-    scale: 1.05;
+    scale: 1.1;
     box-shadow: inset;
-    box-shadow: 0 2px 8px var(--lightBlue);
   }
 }
 

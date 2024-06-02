@@ -141,5 +141,6 @@
         "CONTENT": "BrainBox Generatoren ist ein Dienst der",
         "CONTENT-2": "um alle datenschutzrelevanten Dienste auf einer Website zu erkennen und unter anderem damit bei der Erstellung der Datenschutzerklärung zu helfen. Dabei werden keine personenbezogenen Daten erfasst oder verarbeitet."
       }
-  }}}
-
+    }
+  }
+}
