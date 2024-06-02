@@ -15,7 +15,7 @@
     "HEADLINE": "Über mich",
     "FIRST-DESCRIPTION": "Hallo, ich bin ein Frontend-Entwickler und lebe in Seedorf im Kanton Bern, Schweiz. Mit meinem Wissen in HTML und JavaScript mit dem Framework Angular habe ich viele Fähigkeiten, um Webanwendungen zu erstellen, was man an meinem Wissen in CSS sehen kann.",
     "SECOND-DESCRIPTION": "Schon früh in meiner Kindheit begeisterte ich mich für Technologie und begann meine Karriere im Automobilbau. Meine Faszination für IT wuchs im Laufe der Jahre immer mehr. Vom Zusammenbau meines eigenen PCs bis hin zur Softwareentwicklung.",
-    "LAST-DESCRIPTION": "Ich zeichne mich durch meine komplexe Denkweise und die entsprechenden analytischen Fähigkeiten aus. Mit meinem erworbenen Wissen und meinen Kommunikationsfähigkeiten bin ich auch in der Lage, große Herausforderungen zu meistern."
+    "LAST-DESCRIPTION": "Ich zeichne mich durch meine komplexe Denkweise und die entsprechenden analytischen Fähigkeiten aus. Mit meinem erworbenen Wissen und meinen Kommunikationsfähigkeiten bin ich auch in der Lage, grosse Herausforderungen zu meistern."
   },
 
   "SKILLS": {
@@ -54,5 +54,92 @@
 
   "IMPRESSUM": {
     "CONTACT": "Kontakt"
-  }
-}
+  },
+
+  "PRIVACY-POLICY": {
+    "LAST-UPDATED": "Zuletzt aktualisiert am: 22.05.2024",
+    "INTRO": "Wir legen grossen Wert darauf, dass der Umgang mit Personendaten transparent ist. Diese Datenschutzerklärung gibt Auskunft darüber, welche personenbezogenen Daten wir sammeln, zu welchem Zweck und an wen wir sie weitergeben. Um eine hohe Transparenz zu gewährleisten, wird diese Datenschutzerklärung regelmässig überprüft und aktualisiert.",
+    "SERVICES-USED": "1. Welche Dienste wir nutzen",
+    "CONTACT-INFO": "2. Kontaktinformationen",
+    "CONTACT-DESC": "Bei Fragen oder Anliegen zum Schutz Ihrer Daten durch uns erreichen Sie uns jederzeit per E-Mail unter info@silvanstuber.ch. Verantwortlich für die Datenbearbeitungen, die über diese Website erfolgen, ist:",
+    "GENERAL-PRINCIPLES": "3. Allgemeine Grundsätze",
+    "DATA-COLLECTION-TITLE": "3.1 Welche Daten sammeln wir von Ihnen und von wem erhalten wir diese Daten",
+    "DATA-COLLECTION-DESC": "In erster Linie bearbeiten wir Personendaten, die Sie uns übermitteln oder die wir beim Betrieb unserer Website sammeln. Unter Umständen erhalten wir Personendaten über Sie auch von Dritten. Das können folgende Kategorien sein:",
+    "DATA-CATEGORIES": {
+      "PERSONAL-DATA": "Personenstammdaten (Name, Adresse, Geburtsdaten, etc.);",
+      "CONTACT-DATA": "Kontaktdaten (Handynummer, E-Mailadresse, etc.);",
+      "FINANCIAL-DATA": "Finanzdaten (bspw. Kontoangaben);",
+      "ONLINE-IDENTIFIERS": "Onlinekennungen (bspw. Cookie-Kennung, IP-Adressen);",
+      "LOCATION-TRAFFIC-DATA": "Standort- und Verkehrsdaten;",
+      "AUDIO-VISUAL-DATA": "Ton- und Bildaufnahmen;",
+      "SENSITIVE-DATA": "besonders schützenswerte Daten (bspw. biometrische Daten oder Angaben über Ihre Gesundheit)."
+    },
+    "TITLE_3_2": "3.2 Unter welchen Voraussetzungen bearbeiten wir Ihre Daten?",
+    "TEXT_3_2": "Wir behandeln Ihre Daten vertraulich und gemäss den in dieser Datenschutzerklärung festgelegten Zwecken. Wir achten dabei auf eine transparente und verhältnismässige Bearbeitung. Falls wir ausnahmsweise nicht in der Lage sind, diese Grundsätze zu befolgen, kann die Datenbearbeitung trotzdem rechtmässig sein, weil ein Rechtfertigungsgrund vorliegt. Als Rechtfertigungsgrund kommt namentlich in Frage:",
+    "CONSENT": "Ihre Einwilligung;",
+    "CONTRACT": "die Durchführung eines Vertrages oder vorvertraglicher Massnahmen;",
+    "LEGITIMATE_INTERESTS": "unsere berechtigten Interessen, sofern Ihre Interessen nicht überwiegen.",
+    "TITLE_3_3": "3.3 Wie können Sie Ihre Einwilligung widerrufen?",
+    "TEXT_3_3": "Haben Sie uns eine Einwilligung zur Bearbeitung Ihrer personenbezogenen Daten für bestimmte Zwecke erteilt, bearbeiten wir Ihre Daten im Rahmen dieser Einwilligung, soweit wir keinen anderen Rechtfertigungsgrund haben. Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zu widerrufen, indem Sie eine E-Mail an die im Impressum genannte Adresse schicken. Bereits erfolgte Datenverarbeitungen sind davon nicht betroffen.",
+    "TITLE_3_4": "3.4 In welchen Fällen können wir Ihre Daten an Dritte weitergeben?",
+    "PRINCIPLE": "a. Grundsatz",
+    "TEXT_3_4_A": "Wir sind unter Umständen darauf angewiesen, die Dienste Dritter oder von verbundenen Unternehmen in Anspruch zu nehmen und diese mit der Verarbeitung Ihrer Daten zu beauftragen (sog. Auftragsverarbeiter). Kategorien der Empfänger sind namentlich:",
+    "ACCOUNTING": "Buchhaltung, Treuhand und Revisionsunternehmen;",
+    "CONSULTING": "Beratungsunternehmen (Rechtsberatung, Steuern, etc.);",
+    "IT_SERVICES": "IT-Dienstleister (Webhosting, Support, Clouddienste, Webseitengestaltung, etc.);",
+    "PAYMENT_SERVICES": "Zahlungsdienstleister;",
+    "AD_SERVICES": "Anbieter von Tracking-, Conversion- und Werbedienstleistungen.",
+    "TEXT_3_4_B": "Wir stellen sicher, dass diese Dritten und unsere verbundenen Unternehmen die Voraussetzungen des Datenschutzes einhalten und Ihre personenbezogenen Daten vertraulich behandeln. Unter Umständen sind wir auch verpflichtet, Ihre personenbezogenen Daten an Behörden bekanntzugeben.",
+    "SOCIAL_MEDIA_VISIT": "b. Besuch unserer Social-Media-Kanäle",
+    "TEXT_3_4_B_SOCIAL_MEDIA": "Wir haben eventuell auf unserer Website Links zu unseren Social-Media-Kanälen eingebettet. Das ist für Sie jeweils ersichtlich (typischerweise über entsprechende Symbole). Klicken Sie auf die Symbole, werden Sie auf unsere Social-Media-Kanäle weitergeleitet. Die Social Media Anbieter erfahren in diesem Fall, dass Sie von unserer Website auf deren Plattform zugreifen. Die Social Media Anbieter können die so erhobenen Daten für eigene Zwecke nutzen. Wir weisen darauf hin, dass wir keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch die Betreiber erhalten.",
+    "INTERNATIONAL_TRANSFER": "c. Weitergabe ins Ausland",
+    "TEXT_3_4_C": "Unter Umständen kann es im Rahmen der Auftragsbearbeitung zu Übermittlung Ihrer personenbezogenen Daten an Unternehmen im Ausland kommen. Diese Unternehmen sind im gleichen Umfang zum Datenschutz verpflichtet, wie wir selbst. Die Übermittlung kann weltweit stattfinden. Entspricht das Datenschutzniveau nicht demjenigen des der Schweiz, so nehmen wir eine vorgängige Risikoeinschätzung vor und stellen vertraglich sicher, dass der gleiche Schutz wie in der Schweiz garantiert wird (bspw. mittels der neuen Standardvertragsklauseln der EU-Kommission oder anderen, gesetzlich vorgegebenen Massnahmen). Sollte unsere Risikoeinschätzung negativ ausfallen, ergreifen wir zusätzliche technische Massnahmen zum Schutz Ihrer Daten. Sie können die Standardvertragsklauseln der EU-Kommission abrufen unter folgendem Link.",
+
+    "TITLE_3_5": "3.5 Wie lange bewahren wir Ihre Daten auf?",
+    "PARAGRAPH_1_3_5": "Wir speichern personenbezogene Daten nur so lange, wie dies erforderlich ist, um die einzelnen Zwecke, zu denen die Daten erhoben wurden, zu erfüllen. Daten, die wir bei Ihrem Besuch auf unserer Website speichern, werden während zwölf Monaten aufbewahrt. Eine Ausnahme gilt für Analyse- und Trackingdaten, die länger aufbewahrt werden können. Vertragsdaten speichern wir länger, da wir dazu durch gesetzliche Vorschriften verpflichtet sind. Wir müssen insbesondere geschäftliche Kommunikation, geschlossene Verträge und Buchungsbelege bis zu 10 Jahren aufbewahren. Soweit wir solche Daten von Ihnen nicht mehr zur Durchführung der Dienstleistungen benötigen, werden die Daten gesperrt und wir verwenden sie nur noch für Zwecke der Rechnungslegung und für Steuerzwecke.",
+    "TITLE_3_6": "3.6 Wie schützen wir Ihre Daten?",
+    "PARAGRAPH_1_3_6": "Wir werden Ihre Daten sicher aufbewahren und alle angemessenen Massnahmen ergreifen, um Ihre Daten vor Verlust, Zugriff, Missbrauch oder Änderungen zu schützen. Unsere Vertragspartner und Mitarbeitende, die Zugang zu Ihren Daten haben, sind zur Einhaltung der datenschutzrechtlichen Bestimmungen verpflichtet. In manchen Fällen wird es erforderlich sein, dass wir Ihre Anfragen an mit uns verbundene Unternehmen weiterreichen. Auch in diesen Fällen werden Ihre Daten vertraulich behandelt. Innerhalb unserer Webseite verwenden wir das SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird.",
+    "TITLE_3_7": "3.7 Welche Rechte haben Sie?",
+    "SUBTITLE_A": "a. Auskunftsrecht",
+    "PARAGRAPH_1_A": "Sie können jederzeit eine Auskunft über die von uns über Sie gespeicherten Daten verlangen. Wir bitten Sie, Ihr Auskunftsgesuch zusammen mit einem Identitätsnachweis an info@silvanstuber.ch zu senden. Sie haben ausserdem das Recht, Ihre Daten in einem gängigen Dateiformat zu erhalten, wenn wir Ihre Daten automatisiert bearbeiten, und wenn:",
+    "LIST_ITEM_1_A": "Sie Ihre Einwilligung für die Bearbeitung dieser Daten erteilt haben; oder",
+    "LIST_ITEM_2_A": "Die Daten im Zusammenhang mit dem Abschluss oder der Abwicklung eines Vertrags bekannt gegeben haben.",
+    "PARAGRAPH_2_A": "Wir können die Auskunft bzw. Datenherausgabe einschränken oder verweigern, wenn dies unseren gesetzlichen Verpflichtungen, berechtigten eigenen oder öffentlichen Interessen oder Interessen einer Drittperson entgegensteht. Die Bearbeitung Ihres Gesuchs unterliegt der gesetzlichen Bearbeitungsfrist von 30 Tagen. Diese Frist dürfen wir jedoch aufgrund von hohem Anfragevolumen, aus rechtlichen oder technischen Gründen oder weil wir nähere Angaben von Ihnen benötigen, verlängern. Sie werden über die Fristverlängerung rechtzeitig mindestens in Textform informiert.",
+    "SUBTITLE_B": "b. Löschung und Berichtigung",
+    "PARAGRAPH_1_B": "Sie haben jederzeit die Möglichkeit, die Löschung oder Berichtigung Ihrer Daten zu verlangen. Wir können das Gesuch abweisen, wenn gesetzliche Vorschriften uns zur längeren bzw. unveränderten Aufbewahrung verpflichten oder ein Erlaubnistatbestand Ihrem Gesuch entgegensteht. Bitte beachten Sie, dass die Ausübung Ihrer Rechte unter Umständen im Konflikt mit vertraglichen Abmachungen stehen und entsprechende Auswirkungen auf die Vertragsdurchführung haben kann (z.B. vorzeitige Vertragsauflösung oder Kostenfolgen).",
+
+    "C-COURT-PROCEEDINGS": {
+      "TITLE": "c. Rechtsweg",
+      "CONTENT": "Sind Sie von der Bearbeitung personenbezogener Daten betroffen, haben Sie das Recht, Ihre Rechte gerichtlich durchzusetzen oder bei der zuständigen Aufsichtsbehörde eine Meldung einzureichen. Die zuständige Aufsichtsbehörde in der Schweiz ist der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftragte: https://www.edoeb.admin.ch"
+    },
+    "CHANGES-TO-PRIVACY-POLICY": {
+      "TITLE": "3.8 Änderungen an der Datenschutzerklärung",
+      "CONTENT": "  Wir können diese Datenschutzerklärung jederzeit ändern. Die Änderungen werden auf www.silvanstuber.ch veröffentlicht, Sie werden nicht gesondert darüber informiert."
+    },
+    "INDIVIDUAL-DATA-PROCESSING-OPERATIONS": {
+      "TITLE": "4. Einzelne Datenverarbeitungsvorgänge"
+    },
+    "PROVIDING-WEBSITE-AND-LOGFILES": {
+      "TITLE": "4.1 Bereitstellen der Webseite und Erstellung von Logfiles",
+      "INFORMATION-TITLE": "Welche Informationen erhalten wir und wie nutzen wir sie?",
+      "INFORMATION-CONTENT": "Indem Sie www.silvanstuber.ch besuchen, werden auf unseren Servern oder auf Servern von Dienstleistungen und Produkten, die wir beziehen und / oder installiert haben, bestimmte Daten automatisch zu Zwecken der Systemadministration, für statistische oder für Sicherungszwecke oder für Trackingzwecke gespeichert. Es handelt sich dabei um:",
+      "INFORMATION-LIST": {
+        "ITEM1": "den Namen Ihres Internetserviceproviders;",
+        "ITEM2": "Ihre IP-Adresse (unter Umständen);",
+        "ITEM3": "die Version Ihrer Browser-Software;",
+        "ITEM4": "das Betriebssystem des Rechners mit dem auf die URL zugegriffen wird;",
+        "ITEM5": "das Datum und die Uhrzeit des Zugriffs;",
+        "ITEM6": "die Webseite, von der aus Sie URL besuchen;",
+        "ITEM7": "die Suchwörter die Sie benutzt haben, um die URL zu finden."
+      },
+      "WHY-PROCESS-DATA-TITLE": "Weshalb dürfen wir diese Daten bearbeiten?",
+      "WHY-PROCESS-DATA-CONTENT": "Diese Daten können keiner bestimmten Person zugeordnet werden und es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Die Speicherung der Logfiles erfolgt, um die Funktionsfähigkeit der Webseite zu garantieren und zur Sicherstellung der Sicherheit unserer informationstechnischen Systeme. Hierin besteht unser berechtigtes Interesse.",
+      "PREVENT-DATA-COLLECTION-TITLE": "Wie können Sie die Datenerfassung verhindern?",
+      "PREVENT-DATA-COLLECTION-CONTENT": "Die Daten werden nur solange gespeichert, wie dies zur Erreichung des Zweckes Ihrer Erhebung notwendig ist. Dementsprechend werden die Daten nach Beendigung jeder Sitzung gelöscht. Die Speicherung der Logfiles ist für den Betrieb der Webseite zwingend notwendig, Sie haben daher keine Möglichkeit dagegen Widerspruch zu erheben.",
+      "BRAINBOX-GENERATORS": {
+        "TITLE": "BrainBox Generatoren",
+        "CONTENT": "BrainBox Generatoren ist ein Dienst der",
+        "CONTENT-2": "um alle datenschutzrelevanten Dienste auf einer Website zu erkennen und unter anderem damit bei der Erstellung der Datenschutzerklärung zu helfen. Dabei werden keine personenbezogenen Daten erfasst oder verarbeitet."
+      }
+  }}}
+
