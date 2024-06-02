@@ -15,7 +15,7 @@ export class AppdataService {
   portfolioClicked = false;
   contactClicked = false;
   language = 'en';
-  currentImageHeader = '/assets/img/english.png';
+  currentImageHeader = '/assets/img/german.png';
   currentImageAtf = '/assets/img/atf-description.png';
   menuContents = [
     {

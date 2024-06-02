@@ -6,7 +6,10 @@
     "CONTACT": "Contact"
   },
 
-  "TALK-BUTTON": "Let’s talk!",
+  "ATF": {
+    "TALK-BUTTON": "Let’s talk!",
+    "SCROLL-DOWN": "Scroll down"
+  },
 
   "ABOUT": {
     "HEADLINE": "About me",
@@ -17,7 +20,8 @@
 
   "SKILLS": {
     "HEADLINE": "My skills",
-    "DESCRIPTION": "I have grown my frontend developments skills that have allowed me to create different real projects."
+    "DESCRIPTION": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+    "SKILL-BUTTON": "Get in touch"
   },
 
   "PORTFOLIO": {
@@ -46,5 +50,9 @@
     "PRIVACY-POLICY-FAULT-DESCRIPTION": "Please accept the privacy policy.",
     "PRIVACY-POLICY-BUTTON": "Send message :)",
     "PRIVACY-POLICY-SENDE-MESSAGE": "THANKS FOR YOUR MESSAGE!"
+  },
+
+  "IMPRESSUM": {
+    "CONTACT": "Contact"
   }
 }

@@ -140,9 +140,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  max-width: 100%;
-  gap: 8px;
+  width: 120%;
+  min-width: 10%;
+  gap: 16px;
   margin-top: -4px;
+  > input {
+    height: 48px;
+    width: 48px;
+  }
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -170,11 +175,13 @@
 }
 
 .checkbox-description {
+  width: 100%;
   p {
     display: inline;
     margin: 0;
     font-size: 14px;
     font-weight: 400;
+    width: 100%;
   }
 
   .checkbox-link {
@@ -253,10 +260,6 @@
       padding-top: 330px;
     }
   }
-
-  .checkbox-container label {
-    width: 30px;
-  }
 }
 
 @media (max-width: 1300px) {
@@ -278,10 +281,6 @@
     > p {
       font-size: 16px;
     }
-  }
-
-  .checkbox-container label {
-    width: 40px;
   }
 
   .checkbox-container {
@@ -362,12 +361,6 @@
   }
 }
 
-@media (max-width: 710px) {
-  .checkbox-container label {
-    width: 34px;
-  }
-}
-
 @media (max-width: 680px) {
   .contact-blue-background-left {
     height: 400px;
@@ -377,18 +370,12 @@
   }
 }
 @media (max-width: 570px) {
-  .checkbox-container label {
-    width: 40px;
-  }
-
   .thank-you-text {
     font-size: 16px;
   }
-}
 
-@media (max-width: 520px) {
-  .checkbox-container label {
-    width: 49px;
+  .submit-button {
+    font-size: 20px;
   }
 }
 
@@ -411,10 +398,6 @@
 }
 
 @media (max-width: 450px) {
-  .checkbox-container label {
-    width: 60px;
-  }
-
   .thank-you-text {
     font-size: 14px;
   }
@@ -424,10 +407,8 @@
   .thank-you-text {
     font-size: 10px;
   }
-}
 
-@media (max-width: 360px) {
   .checkbox-container label {
-    width: 80px;
+    height: 20px;
   }
 }

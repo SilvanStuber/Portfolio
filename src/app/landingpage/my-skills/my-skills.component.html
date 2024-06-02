@@ -12,11 +12,11 @@
   </div>
   <div class="skill-description-container">
     <h1>{{ "SKILLS.HEADLINE"| translate }}</h1>
-    <div class="skill-line-right"></div>
+    <div [class.skill-line-right-en]="appdata.language == 'en'" [class.skill-line-right-de]="appdata.language == 'de'"></div>
     <p>
       {{ "SKILLS.DESCRIPTION"| translate }}
     </p>
-    <a href="#contact" class="skill-button">Get in touch</a>
+    <a href="#contact" class="skill-button">{{ "SKILLS.SKILL-BUTTON"| translate }}</a>
   </div>
 </div>
 <img

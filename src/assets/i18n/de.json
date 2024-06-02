@@ -6,7 +6,10 @@
     "CONTACT": "Kontakt"
   },
 
-  "TALK-BUTTON": "Lass uns reden!",
+  "ATF": {
+    "TALK-BUTTON": "Lass uns reden!",
+    "SCROLL-DOWN": "vor scrollen"
+  },
 
   "ABOUT": {
     "HEADLINE": "Über mich",
@@ -16,8 +19,9 @@
   },
 
   "SKILLS": {
-    "HEADLINE": "Meine Fähigkeiten",
-    "DESCRIPTION": "Ich habe meine Frontend-Entwicklungsfähigkeiten weiterentwickelt, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen."
+    "HEADLINE": "Fähigkeiten",
+    "DESCRIPTION": "Ich habe meine Frontend-Entwicklungsfähigkeiten weiterentwickelt, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen.",
+    "SKILL-BUTTON": "Kontakt aufnehmen"
   },
 
   "PORTFOLIO": {
@@ -46,5 +50,9 @@
     "PRIVACY-POLICY-FAULT-DESCRIPTION": "Bitte akzeptieren Sie die Datenschutzerklärung.",
     "PRIVACY-POLICY-BUTTON": "Nachricht senden :)",
     "PRIVACY-POLICY-SENDE-MESSAGE": "DANKE FÜR IHRE NACHRICHT!"
+  },
+
+  "IMPRESSUM": {
+    "CONTACT": "Kontakt"
   }
 }
