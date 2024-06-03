@@ -3,13 +3,13 @@
 <div class="impressum-container">
   <a (click)="appdata.loadATF()" class="back-arrow-container"><div></div></a>
   <div class="impressum-content-container">
-    <h1>Impressum</h1>
+    <h1>{{ "IMPRINT.TITLE" | translate }}</h1>
     <p>
       Silvan Stuber<br />
       Bernstrasse 46<br />
       3267 Seedorf
     </p>
-    <h2>{{ "IMPRESSUM.CONTACT" | translate }}</h2>
+    <h2>{{ "IMPRINT.CONTACT" | translate }}</h2>
     <p class="link-impressum" href="#contact">E-Mail: {{ appdata.email }}</p>
   </div>
 </div>

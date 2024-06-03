@@ -52,7 +52,12 @@
     "PRIVACY-POLICY-SENDE-MESSAGE": "DANKE FÜR IHRE NACHRICHT!"
   },
 
-  "IMPRESSUM": {
+  "FOOTER": {
+    "IMPRINT": "Impressum"
+  },
+
+  "IMPRINT": {
+    "TITLE": "Impressum",
     "CONTACT": "Kontakt"
   },
 

@@ -52,7 +52,12 @@
     "PRIVACY-POLICY-SENDE-MESSAGE": "THANKS FOR YOUR MESSAGE!"
   },
 
-  "IMPRESSUM": {
+  "FOOTER": {
+    "IMPRINT": "Imprint"
+  },
+
+  "IMPRINT": {
+    "TITLE": "Imprint",
     "CONTACT": "Contact"
   },
 

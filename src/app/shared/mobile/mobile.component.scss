@@ -17,16 +17,6 @@
   transition: all 425ms ease-in-out;
 }
 
-.logo-header-mobile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 35px;
-  height: 40px;
-  width: 149px;
-  z-index: 999;
-}
-
 .menu-open-icon {
   position: absolute;
   top: 0;
@@ -93,17 +83,11 @@
   &:hover {
     scale: 1.05;
     box-shadow: inset;
-    box-shadow: 0 2px 8px var(--lightBlue);
   }
 }
 
 @media (max-width: 500px) {
   .menu-open-icon {
     margin-right: 25px;
-  }
-
-  .logo-header-mobile {
-    margin-left: 0;
-    padding-left: 25px;
   }
 }

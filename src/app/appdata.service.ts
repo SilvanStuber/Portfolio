@@ -134,13 +134,14 @@ export class AppdataService {
    * @returns {boolean} - True if the section is active, otherwise false.
    */
   classActive(title: string): boolean {
-    if (title == 'About me') {
+    console.log(title)
+    if (title == 'ABOUT_ME') {
       return this.aboutMeClicked;
-    } else if (title == 'Skills') {
+    } else if (title == 'SKILLS') {
       return this.skillsClicked;
-    } else if (title == 'Portfolio') {
+    } else if (title == 'PORTFOLIO') {
       return this.portfolioClicked;
-    } else if (title == 'Contact') {
+    } else if (title == 'CONTACT') {
       return this.contactClicked;
     }
     return false;

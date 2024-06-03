@@ -1,13 +1,17 @@
 <footer>
   <div class="footer-content-container">
     <div class="footer-logo-container">
-      <img (click)="appdata.loadATF(); appdata.resetMenuVariables();" src="/assets/img/logo.png" alt="logo" />
+      <img
+        (click)="appdata.loadATF(); appdata.resetMenuVariables()"
+        src="/assets/img/logo.png"
+        alt="logo"
+      />
       <p
         (click)="appdata.goToContent('/impressum')"
         class="footer-impressum-desktop impressum-border-bottom-line"
         href=""
       >
-        Impressum
+        {{ "FOOTER.IMPRINT" | translate }}
       </p>
     </div>
     <div>
@@ -31,7 +35,7 @@
       class="footer-impressum-mobile impressum-border-bottom-line"
       href=""
     >
-      Impressum
+      {{ "FOOTER.IMPRINT" | translate }}
     </p>
   </div>
 </footer>
