@@ -58,9 +58,9 @@ export class LandingpageComponent implements OnInit {
       this.appdata.changeStyleBottomLine('About me');
     } else if (scrollPosition > 1100 && scrollPosition < 1750) {
       this.appdata.changeStyleBottomLine('Skills');
-    } else if (scrollPosition > 1750 && scrollPosition < 3050) {
+    } else if (scrollPosition > 1750 && scrollPosition < 3850) {
       this.appdata.changeStyleBottomLine('Portfolio');
-    } else if (scrollPosition > 3050) {
+    } else if (scrollPosition > 3850) {
       this.appdata.changeStyleBottomLine('Contact');
     } else {
       this.appdata.resetMenuVariables();
