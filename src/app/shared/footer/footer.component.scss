@@ -101,6 +101,12 @@ footer {
     flex-direction: column;
     gap: 32px;
   }
+
+  .footer-logo-container {
+    > img {
+      height: 75px;
+    }
+  }
 }
 
 @media (min-width: 1000px) {
