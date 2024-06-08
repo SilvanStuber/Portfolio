@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppdataService {
   constructor(public router: Router, public translate: TranslateService) {}
-  email = 'info@silvanstuber.ch';
+  email = 'mail@silvanstuber.ch';
   menuIsOpen = false;
   imageHeaderNotVisible = false;
   aboutMeClicked = false;
