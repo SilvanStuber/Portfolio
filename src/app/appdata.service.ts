@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   providedIn: 'root',
 })
 export class AppdataService {
-  constructor(public router: Router, public translate: TranslateService) {}
+  constructor(public router: Router, public translate: TranslateService) { }
   email = 'mail@silvanstuber.ch';
   menuIsOpen = false;
   imageHeaderNotVisible = false;
@@ -81,12 +81,12 @@ export class AppdataService {
 
   portfolios = [
     {
-      title: 'Join',
-      technologies: 'JavaScript | HTML | CSS',
-      discription: 'JOIN',
-      image: '/assets/img/join.png',
-      linkGitHub: 'https://github.com/SilvanStuber/join',
-      linkApp: 'https://silvanstuber.ch/join/loginpage.html',
+      title: 'DaBubble',
+      technologies: 'Angular | Firebase | TypeScript',
+      discription: 'DABUBBLE',
+      image: '/assets/img/dabubble.png',
+      linkGitHub: 'https://github.com/SilvanStuber/dabubble',
+      linkApp: 'https://dabubble.silvanstuber.ch/',
     },
     {
       title: 'Sharkie',

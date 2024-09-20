@@ -28,7 +28,7 @@
     "HEADLINE": "Portfolio",
     "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action.",
     "LIVE-TEST-BUTTON": "Live test",
-    "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "DABUBBLE": "DaBubble is a collaboratively developed business chat client designed specifically for business use. The platform is based on well-known messaging services such as Discord, WhatsApp or Slack, but focuses on the specific requirements of companies and their communication.",
     "SHARKIE": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
     "POKEDEX": "Based on the PokéAPI, a simple library that includes details on Pokémon species, their evolutions, abilities, types, and game stats."
   },
