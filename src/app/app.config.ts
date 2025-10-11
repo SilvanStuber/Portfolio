@@ -11,16 +11,16 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideHttpClient(),      importProvidersFrom(
-      HttpClientModule,
-      TranslateModule.forRoot({
-        defaultLanguage: 'en',
-        loader: {
-          provide: TranslateLoader,
-          useFactory: createTranslateLoader,
-          deps: [HttpClient],
-        },
-      })
-    ),
+  providers: [provideRouter(routes), provideHttpClient(), importProvidersFrom(
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'de',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient],
+      },
+    })
+  ),
   ],
 };

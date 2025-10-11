@@ -15,26 +15,21 @@ export class ContactComponent {
   appdata = inject(AppdataService);
   http = inject(HttpClient);
   placeholders: { [key: string]: string } = {};
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService) { }
   contactData = {
     name: '',
     email: '',
     message: '',
+    website: '' as string,
     checkbox: false,
   };
   privacyPolicyChecked = false;
   messageWasSent = false;
 
   post = {
-    endPoint: 'https://silvanstuber.ch/sendMail.php',
-    body: (payload: any) => JSON.stringify(payload),
-    options: {
-      headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
-      },
-    },
+    endPoint: 'https://stuberforms.ch/backend/contact.php'
   };
+
 
   placeholdersName: '' | undefined;
   placeholdersEmail: '' | undefined;
@@ -69,19 +64,35 @@ export class ContactComponent {
    */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+      this.http.post<{ ok: boolean; error?: string }>(
+        this.post.endPoint,
+        {
+          name: this.contactData.name,
+          email: this.contactData.email,
+          message: this.contactData.message,
+          website: this.contactData.website || '', // falls dein PHP Honeypot erwartet
+        },
+        {
+          headers: { 'Content-Type': 'application/json' }, // HttpClient setzt das i.d.R. auch automatisch
+          responseType: 'json',
+        } as const
+      )
         .subscribe({
-          next: (response) => {
-            ngForm.resetForm();
-            this.visibleMessageConfirmation();
+          next: (res) => {
+            if (res?.ok) {
+              ngForm.resetForm();
+              this.visibleMessageConfirmation();
+            } else {
+              console.error('Server meldet Fehler:', res?.error ?? 'Unbekannt');
+            }
           },
-          error: (error) => {
-            console.error(error);
-          },
+          error: (err) => {
+            console.error('Netzwerk/Server-Fehler:', err);
+          }
         });
     }
   }
+
 
   /**
    * Displays a confirmation message indicating that a message was sent.

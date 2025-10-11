@@ -7,16 +7,16 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppdataService {
   constructor(public router: Router, public translate: TranslateService) { }
-  email = 'mail@silvanstuber.ch';
+  email = 'info@stuberforms.ch';
   menuIsOpen = false;
   imageHeaderNotVisible = false;
   aboutMeClicked = false;
   skillsClicked = false;
   portfolioClicked = false;
   contactClicked = false;
-  language = 'en';
-  currentImageHeader = '/assets/img/german.png';
-  currentImageAtf = '/assets/img/atf-description.png';
+  language = 'de';
+  currentImageHeader = '/assets/img/english.png';
+  currentImageAtf = '/assets/img/atf-description-german.png';
   menuContents = [
     {
       linkComponent: '#aboutMe',
@@ -86,7 +86,7 @@ export class AppdataService {
       discription: 'DABUBBLE',
       image: '/assets/img/dabubble.png',
       linkGitHub: 'https://github.com/SilvanStuber/dabubble',
-      linkApp: 'https://dabubble.silvanstuber.ch/',
+      linkApp: 'https://dabubble.stuberforms.ch/',
     },
     {
       title: 'Sharkie',
@@ -94,7 +94,7 @@ export class AppdataService {
       discription: 'SHARKIE',
       image: '/assets/img/sharkie.png',
       linkGitHub: 'https://github.com/SilvanStuber/Sharkie',
-      linkApp: 'https://silvanstuber.ch/sharkie',
+      linkApp: 'https://dev.stuberforms.ch/sharkie',
     },
     {
       title: 'Pokédex',
@@ -102,7 +102,7 @@ export class AppdataService {
       discription: 'POKEDEX',
       image: '/assets/img/pokedex.png',
       linkGitHub: 'https://github.com/SilvanStuber/pokedex',
-      linkApp: 'https://silvanstuber.ch/pokedex/',
+      linkApp: 'https://dev.stuberforms.ch/pokedex/',
     },
   ];
 
