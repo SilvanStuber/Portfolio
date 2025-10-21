@@ -27,7 +27,7 @@ export class ContactComponent {
   messageWasSent = false;
 
   post = {
-    endPoint: 'https://stuberforms.ch/backend/contact.php'
+    endPoint: 'https://dev.stuberforms.ch/backend/contact.php'
   };
 
 
